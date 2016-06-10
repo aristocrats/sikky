@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest. Uses Rollup for bundle, and Buble as the ES2015 compiler",
   "main": "dist/sikky.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sikky/sikky.git"
+    "url": "git+https://github.com/kflash/sikky.git"
   },
   "author": {
     "name": "KFlash",
@@ -32,6 +32,7 @@
     "rollup-plugin-replace": "^1.1.0",
     "rimraf": "^2.5.2",
     "typescript": "next",
-    "tslint": "next"
+    "tslint": "next",
+    "codelyzer": "0.0.22"
   }
 }
