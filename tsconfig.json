@@ -5,6 +5,8 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "newLine": "LF",
+    "jsx": "preserve",
+    "pretty": true,
     "removeComments": false,
     "moduleResolution": "node",
     "experimentalDecorators": true,

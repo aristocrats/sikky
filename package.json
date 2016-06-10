@@ -1,12 +1,12 @@
 {
   "name": "sikky",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest. Uses Rollup for bundle, and Buble as the ES2015 compiler",
   "main": "dist/sikky.js",
   "scripts": {
     "clean:build": "rimraf build/",
     "test": "",
-    "tsc": "./node_modules/.bin/tsc --pretty",
+    "tsc": "./node_modules/.bin/tsc",
     "build": "npm run tsc && npm run build:dev && npm run build:prod",
     "build:dev": "rollup -c rollup.dev.config.ts",
     "build:prod": "rollup -c rollup.prod.config.ts"
