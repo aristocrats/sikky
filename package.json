@@ -1,0 +1,32 @@
+{
+  "name": "cirloc",
+  "version": "0.0.2",
+  "description": "TypeScript 2.0 boilerplate",
+  "main": "dist/rollup-starter-project.js",
+  "scripts": {
+    "clean:build": "rimraf build/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "./node_modules/.bin/tsc --pretty",
+    "build": "npm run tsc && npm run build:dev && npm run build:prod",
+    "build:dev": "rollup -c rollup.dev.config.ts",
+    "build:prod": "rollup -c rollup.prod.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cirloc/cirloc.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cirloc/cirloc/issues"
+  },
+  "homepage": "https://github.com/cirloc/cirloc#readme",
+  "devDependencies": {
+    "rollup": "^0.30.0",
+    "rollup-plugin-buble": "^0.10.0",
+    "rollup-plugin-uglify": "^0.3.1",
+    "rollup-plugin-replace": "^1.1.0",
+    "rimraf": "^2.5.2",
+    "typescript": "next"
+  }
+}
