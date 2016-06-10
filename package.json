@@ -5,7 +5,7 @@
   "main": "dist/sikky.js",
   "scripts": {
     "clean:build": "rimraf build/",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "tsc": "./node_modules/.bin/tsc --pretty",
     "build": "npm run tsc && npm run build:dev && npm run build:prod",
     "build:dev": "rollup -c rollup.dev.config.ts",
