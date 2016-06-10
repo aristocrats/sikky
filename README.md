@@ -21,3 +21,5 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 * `npm run build` - build bundle both for development and production
 * `npm run build:dev` - builds bundle for development
 * `npm run build:prod` - builds bundle for production
+* `npm run lint` - validates all TypeScript files
+
