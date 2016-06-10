@@ -1,51 +1,12 @@
-# whitelisted branches
-branches:
-  only:
-    - master
-    - next
-
 language: node_js
-sudo: required
+sudo: false
 dist: trusty
-node_js:
-  - '4'
-  - '5'
-  - 'stable'
+node_js:- 'stable'
 
-#cache:
- # directories:
-  # - node_modules
-
-branches:
-  except:
-   - /^v\d+\.\d+\.\d+$/
-
-# node 4 likes the G++ v4.8 compiler
-# see https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-      - google-chrome
-    packages:
-      - g++-4.8
-      - google-chrome-stable
-
-before_install:
-# Used by karma and karma-chrome-launcher
-- "export CHROME_BIN=/usr/bin/google-chrome"
-# used by xvfb that is used by Chrome
-- "export DISPLAY=:99.0"
-- "sh -e /etc/init.d/xvfb start"
-
+cache:
+  directories:
+   - node_modules
 install:
-  # Check the size of caches
-  - du -sh ./node_modules || true
-  # Install version of npm that we are locked against
-  - npm install -g npm@3
-  # add node.js module for TypeScript type definition
-  - npm install tsd@next -g
-  # - npm config set registry http://23.251.144.68
   # Disable the spinner, it looks bad on Travis
   - npm config set spin false
 #  - sudo apt-get update -qq
