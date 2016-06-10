@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 
 A very fast, and very small boilerplate. Uses TypeScript 2.0 Pre to compile down to ES2015. From there Rollup and Buble will do the magic.
-A complete bundle time is assumed to be around 0.6 ms. Depends on your computer.
+A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 
 ## Features
 
