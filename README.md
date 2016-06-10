@@ -10,7 +10,7 @@ A complete bundle time is assumed to be around 0.6 ms. Depends on your computer.
 - [x] [Typescript](https://www.typescriptlang.org/) 2.0 Pre
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Rollup](http://rollupjs.org/) for bundling
-
+- [x] SourceMap
 
 ## Workflow
 
