@@ -1,1 +1,0 @@
-{"version":3,"file":"sikky.umd.js","sources":["sikky.js"],"sourcesContent":["export default (x, y) => x + y;\n"],"names":[],"mappings":";;;;;;AAAA,iBAAgB,CAAC,EAAE,CAAC,EAAE,SAAG,CAAC,GAAG,CAAC,GAAA,CAAC;;;;"}

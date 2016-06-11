@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.0.19",
+  "version": "0.1.1",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest. Uses Rollup for bundle, and Buble as the ES2015 compiler",
   "main": "dist/sikky.js",
   "scripts": {
@@ -34,10 +34,7 @@
     "src",
     "dist"
   ],
-  "author": {
-    "name": "KFlash",
-    "email": "kflash123@gmail.com"
-  },
+  "author": "KFlash",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kflash/sikky/issues"

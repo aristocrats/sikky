@@ -1,7 +1,7 @@
-import buble from 'rollup-plugin-buble';
-import replace from 'rollup-plugin-replace';
-import uglify from 'rollup-plugin-uglify';
-
+const buble = require('rollup-plugin-buble');
+const replace = require('rollup-plugin-replace');
+const uglify = require('rollup-plugin-uglify');
+const pkg = require('./package.json');
 export default {
     entry: 'dist/sikky.js',
     useStrict: false,
@@ -22,9 +22,9 @@ export default {
     ],
     targets: [
         {
-            dest: 'dist/sikky.umd.min.js',
+            dest: 'dist/' + pkg.name + '.es5.min.js',
             format: 'umd',
-            moduleName: 'Sikky',
+            moduleName: pkg.name,
             sourceMap: true
         }
     ]
