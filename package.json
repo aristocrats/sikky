@@ -1,17 +1,19 @@
 {
   "name": "sikky",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "scripts": {
     "pretest": "tsc test/sikky.specs.ts --outDir build --module system --target es5",
-    "test": "karma start karma.conf.js --no-auto-watch --single-run",
-    "watch": "karma start karma.conf.js --auto-watch",
+    "test": "cross-env NODE_ENV=test && karma start karma.conf.js --no-auto-watch --single-run",
+    "watch": "cross-env NODE_ENV=test && karma start karma.conf.js --auto-watch",
     "build": "npm run build:ts && npm run build:dev && npm run build:prod",
-    "build:ts": "tsc src/sikky.ts --outDir dist --target es6",
-    "build:dev": "rollup -c rollup.dev.config.ts",
-    "build:prod": "rollup -c rollup.prod.config.ts",
-    "lint": "tslint \"src/**/*.ts?(x)\""
+    "build:ts": "cross-env NODE_ENV=development && tsc src/sikky.ts --outDir dist --target es6",
+    "build:dev": "cross-env NODE_ENV=development && rollup -c rollup.dev.config.ts",
+    "build:prod": "cross-env NODE_ENV=production && rollup -c rollup.prod.config.ts",
+    "lint": "npm run lint:src && npm run lint:tests",
+    "lint:src": "tslint \"src/**/*.ts?(x)\"",
+    "lint:tests": "tslint \"test/**/*.ts?(x)\""
   },
   "repository": {
     "type": "git",
@@ -47,6 +49,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
+    "cross-env": "^1.0.8",
     "codelyzer": "0.0.23",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
