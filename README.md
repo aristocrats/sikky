@@ -39,7 +39,7 @@ npm run build:prod
 
 ## Workflow
 
-* `npm run build:tsc` - transpile TypeScript down to ES2016
+* `npm run build:ts` - transpile TypeScript down to ES2016
 * `npm run build` - transpile down to ES2015, and builds a bundle both for development and production
 * `npm run build:dev` - builds bundle for development
 * `npm run build:prod` - builds bundle for production
