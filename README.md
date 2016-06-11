@@ -10,7 +10,7 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Rollup](http://rollupjs.org/) for bundling
-- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/)
+- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/). Supports TypeScript 2.0 
 - [x] Intelligent code editing with [VSCode](https://code.visualstudio.com/)
 - [x] SourceMap
 - [x] TSX / JSX
