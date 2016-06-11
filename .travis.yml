@@ -6,12 +6,13 @@ sudo: required
 # which absolves us from having to install compilers and stuff
 dist: trusty
 
-node_js:
-  - "stable"
-
 cache:
   directories:
     - node_modules
+
+branches:
+  except:
+    - /^g3_.*$/
 
 # node 4 likes the G++ v4.8 compiler
 # see https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
@@ -23,6 +24,16 @@ addons:
     packages:
       - g++-4.8
       - google-chrome-stable
+      
+matrix:
+  include:
+    - node_js: 'stable'
+    - node_js: '6'
+    - node_js: '5'
+    - node_js: '4'
+
+before_install:
+  - "nvm use $TRAVIS_NODE_VERSION"
 
 install:
   # Check the size of caches
@@ -37,6 +48,13 @@ install:
   - npm config set loglevel http
   # Install npm dependencies and ensure that npm cache is not stale
   - npm install
-
-script:
   - npm test
+
+before_install:
+ # Used by karma and karma-chrome-launcher
+   - "export CHROME_BIN=/usr/bin/google-chrome"
+   # used by xvfb that is used by Chrome
+   - "export DISPLAY=:99.0"
+   - "sh -e /etc/init.d/xvfb start"
+notifications:
+  email: true
