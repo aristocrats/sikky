@@ -44,3 +44,13 @@ npm run build:prod
 * `npm run lint` - validates all TypeScript files
 * `npm run tsc` - transpile TypeScript down to ES2015
 
+## Why TypeScript, Rollup and Buble?
+
+TypeScript doesn't offer much more than just  selecting the module export type, and it bundles down to a horrible ES5 code. So you would need 
+to transpile down to ES2015, and from there use a real ES2015 compiler.
+
+Babel is the people's favorite, but it's not quick enough, and provides additional code in your bundled files for example if you are using ES2016 
+classes. So the choice fell on Bubble.
+
+For the bundler itself, both Webpack and Browserify also give you additional code in your bundled files. I wanted a quick build system with clean output. 
+Rollup provides this. Clean and nice output with exactly the same code as you developed.
