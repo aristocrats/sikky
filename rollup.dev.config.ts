@@ -3,7 +3,7 @@ import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonJs';
 
 export default {
-	entry: 'build/sikky.js',
+	entry: 'dist/sikky.js',
 	useStrict: false,
 	plugins: [
 		replace({
@@ -14,7 +14,7 @@ export default {
 	],
 	targets: [
 		{
-			dest: 'dist/sikky.js',
+			dest: 'dist/sikky.umd.js',
 			format: 'umd',
 			moduleName: 'Sikky',
 			sourceMap: true

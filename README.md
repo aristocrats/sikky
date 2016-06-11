@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 
-A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015`. From there `Rollup` and `Bublé` will do the magic.
+A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2016`. From there, you can choose to use a `Rollup` and `Bublé` 
+combo to bundle down to `ES2015`.
+
 A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 
 ## Features
@@ -37,17 +39,17 @@ npm run build:prod
 
 ## Workflow
 
-* `npm run clean:build` - remove the build directory
-* `npm run build` - build bundle both for development and production
+* `npm run build:tsc` - transpile TypeScript down to ES2016
+* `npm run build` - transpile down to ES2015, and builds a bundle both for development and production
 * `npm run build:dev` - builds bundle for development
 * `npm run build:prod` - builds bundle for production
 * `npm run lint` - validates all TypeScript files
-* `npm run tsc` - transpile TypeScript down to ES2015
 
 ## Why TypeScript, Rollup and Buble?
 
 TypeScript doesn't offer much more than just  selecting the module export type, and it bundles down to a horrible `ES5` code. 
-So you would need to transpile down to `ES2015`, and from there use a real `ES2015 compiler`.
+So my choice TypeScript is set to bundle down to `ES2016`. From there it's up to you 'if you wannt to transpile down to `ES2015`. 
+If so, you would need a real `ES2015 compiler`.
 
 Babel is the people's favorite, but it's not quick enough, and provides additional code in your bundled files for example if you are using `ES2016` classes. So the choice fell on `Bublé`.
 

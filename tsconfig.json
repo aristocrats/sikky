@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "outDir": "build",
+    "outDir": "dist",
     "noImplicitAny": true,
     "strictNullChecks": true,
     "newLine": "LF",

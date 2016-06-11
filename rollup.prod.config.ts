@@ -3,7 +3,7 @@ import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 
 export default {
-    entry: 'build/sikky.js',
+    entry: 'dist/sikky.js',
     useStrict: false,
     plugins: [
         replace({
@@ -22,7 +22,7 @@ export default {
     ],
     targets: [
         {
-            dest: 'dist/sikky.min.js',
+            dest: 'dist/sikky.umd.min.js',
             format: 'umd',
             moduleName: 'Sikky',
             sourceMap: true
