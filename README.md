@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 
-A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2016`. From there, you can choose to use a `Rollup` and `Bublé` 
-combo to bundle down to `ES2015`.
+A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015`. From there, you can choose to use a `Rollup` and `Bublé` combo to bundle down to a clean `ES2015` bundle.
 
 A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 
