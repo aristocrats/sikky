@@ -40,9 +40,9 @@ npm run build:prod
 ## Workflow
 
 * `npm run build:ts` - transpile TypeScript down to ES2016
-* `npm run build` - transpile down to ES2015, and builds a bundle both for development and production
-* `npm run build:dev` - builds bundle for development
-* `npm run build:prod` - builds bundle for production
+* `npm run build` - transpile down to ES2015 and builds a bundle both for development and production
+* `npm run build:dev` - transpile down to ES2015 and builds a bundle for development
+* `npm run build:prod` - transpile down to ES2015 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
 
 ## Why TypeScript, Rollup and Buble?
