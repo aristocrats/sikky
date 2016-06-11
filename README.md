@@ -39,17 +39,16 @@ npm run build:prod
 
 ## Workflow
 
-* `npm run build:ts` - transpile TypeScript down to ES2016
-* `npm run build` - transpile down to ES2015 and builds a bundle both for development and production
-* `npm run build:dev` - transpile down to ES2015 and builds a bundle for development
-* `npm run build:prod` - transpile down to ES2015 and builds a bundle for production
+* `npm run build:ts` - transpile TypeScript down to ES2015 with experimental support for ES2016 decorators
+* `npm run build` - transpile down to ES5 and builds a bundle both for development and production
+* `npm run build:dev` - transpile down to ES5 and builds a bundle for development
+* `npm run build:prod` - transpile down to ES5 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
 
 ## Why TypeScript, Rollup and Buble?
 
 TypeScript doesn't offer much more than just  selecting the module export type, and it bundles down to a horrible `ES5` code. 
-So my choice TypeScript is set to bundle down to `ES2016`. From there it's up to you 'if you wannt to transpile down to `ES2015`. 
-If so, you would need a real `ES2015 compiler`.
+So my choice TypeScript is set to bundle down to `ES5` with experimental support for `ES7` decorators. From there it's up to you 'if you wannt to transpile down to a clean`ES2015` bundle. If so, you would need a real `ES2015 compiler`.
 
 Babel is the people's favorite, but it's not quick enough, and provides additional code in your bundled files for example if you are using `ES2016` classes. So the choice fell on `Bublé`.
 
