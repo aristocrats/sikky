@@ -8,6 +8,9 @@
     "removeComments": false,
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "inlineSources": true,
+    "inlineSourceMap": true,
     "noEmitHelpers": true
   },
   "compileOnSave": false,

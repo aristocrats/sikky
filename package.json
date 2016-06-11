@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "scripts": {
@@ -47,7 +47,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "codelyzer": "0.0.22",
+    "codelyzer": "0.0.23",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
     "karma-mocha": "^1.0.1",
