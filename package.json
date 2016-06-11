@@ -12,9 +12,10 @@
     "build:dev": "cross-env NODE_ENV=development && rollup -c rollup.dev.config.ts",
     "build:prod": "cross-env NODE_ENV=production && rollup -c rollup.prod.config.ts",
     "lint": "npm run lint:src && npm run lint:tests",
-    "lint:src": "tslint \"src/**/*.ts?(x)\"",
-    "lint:tests": "tslint \"test/**/*.ts?(x)\""
+    "lint:src": "tslint 'src/**/*.{ts,tsx}'",
+    "lint:tests": "tslint 'test/**/*.{ts,tsx}'"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kflash/sikky.git"
@@ -49,12 +50,12 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "cross-env": "^1.0.8",
     "codelyzer": "0.0.23",
+    "cross-env": "^1.0.8",
     "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-mocha": "^1.0.1",
-    "karma-chai": "^0.1.0",
     "mocha": "^2.5.2",
     "rollup": "^0.31.0",
     "rollup-plugin-buble": "^0.10.0",

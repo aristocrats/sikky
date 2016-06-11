@@ -1,4 +1,4 @@
-## v.0.1.8
+## v.0.1.9
 
 - added support for environment variabels
 - support development and production build. Production build get minified.
