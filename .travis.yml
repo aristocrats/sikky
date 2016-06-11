@@ -9,4 +9,4 @@ install:
 
 script:
   - npm install
-  - npm run test
+  - npm test

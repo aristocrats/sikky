@@ -17,7 +17,7 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 - [x] TSX / JSX
 - [x] Experimental support for ES7 decorators.
 - [x] Async, await and generators in ES5
-
+- [x] Mocha & chai de facto standard
 ## Quick start
 
 The only development dependency of this project is [Node.js](https://nodejs.org/en/). So just make sure you have it installed. Then
@@ -43,6 +43,7 @@ npm run build:prod
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
+* `npm run test` - runs unit tests
 
 ## Why TypeScript, Rollup and Buble?
 
