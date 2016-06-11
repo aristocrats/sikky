@@ -1,3 +1,15 @@
+// declare module '~chai/lib/Assertion' {
+//   interface Assertion {
+//     class: any;
+//   }
+// }
+
+declare var describe: any;
+declare var it: any;
+declare var beforeEach: any;
+declare var afterEach: any;
+declare var chai: any;
+
 describe('Simplest Test Ever', () => {
   it('true is true', () => {
     chai.expect(true).to.equal(true);
