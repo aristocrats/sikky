@@ -1,5 +1,6 @@
 import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
+import commonjs from 'rollup-plugin-commonJs';
 
 export default {
 	entry: 'build/sikky.js',
@@ -8,7 +9,8 @@ export default {
 		replace({
 			'process.env.NODE_ENV': "'development'"
 		}),
-		buble(),
+		buble({ exclude: 'node_modules/**' }),
+        commonjs({include: 'node_modules/**'})
 	],
 	targets: [
 		{
