@@ -5,8 +5,8 @@ node_js:
   - "stable"
 
 install:
-  - npm install typescript
+  - npm i typescript@next
 
 script:
-  - npm install
+  - npm i
   - npm test
