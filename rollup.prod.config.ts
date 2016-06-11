@@ -2,6 +2,7 @@ const buble = require('rollup-plugin-buble');
 const replace = require('rollup-plugin-replace');
 const uglify = require('rollup-plugin-uglify');
 const pkg = require('./package.json');
+
 export default {
     entry: 'dist/' +  pkg.name + '.js',
     useStrict: false,

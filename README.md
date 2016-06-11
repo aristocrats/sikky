@@ -2,9 +2,12 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 
-A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015`. From there, you can choose to use a `Rollup` and `Bublé` combo to bundle down to a clean `ES2015` bundle.
+A very fast, and very small boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015`. 
+From `ES2015` to `ES5` there are build in options to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle.
 
 A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
+
+Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
 
 ## Features
 
@@ -17,6 +20,7 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 - [x] TSX / JSX
 - [x] Experimental support for ES7 decorators.
 - [x] Async, await and generators in ES5
+- [x] Karma as the test runner
 - [x] Mocha & chai de facto standard
 
 ## Quick start
@@ -44,7 +48,8 @@ npm run build:prod
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
-* `npm run test` - runs unit tests
+* `npm run test` - runs unit tests in the browser with Chrome
+* `npm run watch` - run all unit tests and watch files for changes
 
 ## Why TypeScript, Rollup and Buble?
 

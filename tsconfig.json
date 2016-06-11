@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "outDir": "dist",
     "noImplicitAny": true,
     "strictNullChecks": true,
     "newLine": "LF",
@@ -12,9 +10,6 @@
     "experimentalDecorators": true,
     "noEmitHelpers": true
   },
-  "files": [
-    "src/sikky.ts"
-  ],
   "compileOnSave": false,
   "buildOnSave": false,
   "atom": { "rewriteTsconfig": false }
