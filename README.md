@@ -52,6 +52,6 @@ npm run build:prod
 * `npm run test` - runs unit tests in the browser with Chrome
 * `npm run watch` - run all unit tests and watch files for changes
 
-## Async, await and generators
+## Async/await
 
 Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`.
