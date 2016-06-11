@@ -1,19 +1,11 @@
 language: node_js
 sudo: false
-dist: trusty
-node_js:- 'stable'
 
-cache:
-  directories:
-   - node_modules
+node_js:
+  - "stable"
+
 install:
-  # Disable the spinner, it looks bad on Travis
-  - npm config set spin false
-#  - sudo apt-get update -qq
-  # Log HTTP requests
-  - npm config set loglevel http
-  # Install npm dependencies and ensure that npm cache is not stale
-  - npm install
+  - npm install typescript
 
-notifications:
-  email: true
+script:
+  - npm install
