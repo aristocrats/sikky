@@ -3,13 +3,13 @@ const replace = require('rollup-plugin-replace');
 const pkg = require('./package.json');
 
 export default {
-    entry: 'dist/sikky.js',
+    entry: 'dist/' +  pkg.name + '.js',
     useStrict: false,
     banner: '/**\n' +
     ' * ' + pkg.name + '\n' +
     ' * @version ' + pkg.version + '\n' +
     ' * @copyright (c) 2016 ' + pkg.author + '\n' +
-    ' * @license MIT <https://github.com/kflash/sikky/blob/master/LICENSE>\n' +
+    ' * @license MIT <'+ pkg.homepage + '/blob/master/LICENSE>\n' +
     ' */',
     plugins: [
         replace({

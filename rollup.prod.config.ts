@@ -3,7 +3,7 @@ const replace = require('rollup-plugin-replace');
 const uglify = require('rollup-plugin-uglify');
 const pkg = require('./package.json');
 export default {
-    entry: 'dist/sikky.js',
+    entry: 'dist/' +  pkg.name + '.js',
     useStrict: false,
     plugins: [
         replace({
