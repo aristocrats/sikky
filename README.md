@@ -21,7 +21,9 @@ Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
 - [x] Experimental support for ES7 decorators.
 - [x] Async, await and generators in ES5
 - [x] Karma as the test runner
+- [x] Test Driven Development (TDD)
 - [x] Mocha & chai de facto standard
+
 
 ## Quick start
 

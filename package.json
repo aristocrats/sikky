@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "scripts": {
