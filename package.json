@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest. Uses Rollup for bundle, and Buble as the ES2015 compiler",
   "main": "dist/sikky.js",
   "scripts": {
