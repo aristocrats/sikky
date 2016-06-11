@@ -18,6 +18,7 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 - [x] Experimental support for ES7 decorators.
 - [x] Async, await and generators in ES5
 - [x] Mocha & chai de facto standard
+
 ## Quick start
 
 The only development dependency of this project is [Node.js](https://nodejs.org/en/). So just make sure you have it installed. Then
