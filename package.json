@@ -4,7 +4,7 @@
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "scripts": {
-    "pretest": "tsc test/sikky.specs.ts --outDir build --module system --target es5",
+    "postinstall": "typings install",
     "test": "cross-env NODE_ENV=test && karma start karma.conf.js --no-auto-watch --single-run",
     "watch": "cross-env NODE_ENV=test && karma start karma.conf.js --auto-watch",
     "build": "npm run build:ts && npm run build:dev && npm run build:prod",
@@ -29,6 +29,9 @@
     "microsoft",
     "karma",
     "tslint",
+    "rollup",
+    "modules",
+    "bundling",
     "bundle",
     "ts",
     "rollup",
@@ -46,7 +49,9 @@
     "url": "https://github.com/kflash/sikky/issues"
   },
   "homepage": "https://github.com/kflash/sikky",
-  "dependencies": {},
+  "dependencies": {
+    "semver": "^5.1.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "codelyzer": "0.0.23",
