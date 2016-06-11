@@ -18,7 +18,7 @@ Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
 - [x] SourceMap
 - [x] TSX / JSX
 - [x] Experimental support for ES7 decorators.
-- [x] Async, await and generators in ES5
+- [x] Async, await and generators
 - [x] Karma as the test runner
 - [x] Test Driven Development (TDD)
 - [x] Mocha & chai de facto standard
@@ -51,3 +51,7 @@ npm run build:prod
 * `npm run lint` - validates all TypeScript files
 * `npm run test` - runs unit tests in the browser with Chrome
 * `npm run watch` - run all unit tests and watch files for changes
+
+## Async, await and generators
+
+Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`.
