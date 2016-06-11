@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 
-A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle. `Bublé` is used for compability with older browsers. Easy to get rid off, or swapped with Babel.
+A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle. `Bublé` is used for compability with older browsers. Easy to get rid of or replaced with Babel.
 
 A complete bundle time is assumed to be around 0.4 ms. Depends on your computer.
 
