@@ -1,6 +1,9 @@
 ## Sikky
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
+[![npm version](https://badge.fury.io/js/sikky.svg)](https://badge.fury.io/js/sikky)
+[![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
+[![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
 
 A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle. 
 `Bublé` is used for compability with older browsers. Easy to get rid of or replaced with Babel. 
