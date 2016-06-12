@@ -4,7 +4,7 @@ import uglify from 'rollup-plugin-uglify';
 import TypeScript from 'rollup-plugin-typescript';
 import multiEntry from 'rollup-plugin-multi-entry';
 import glob from 'glob';
-import * as tsc from 'typescript';
+import * as TS20Pre from 'typescript';
 const tsConfig = require("./tsconfig.json");
 
 export default {
@@ -15,7 +15,8 @@ export default {
             'process.env.NODE_ENV': "'production'"
         }),
         TypeScript(Object.assign(tsConfig.compilerOptions, {
-        typescript: tsc,
+        // Use the TS 2.0 Pre compiler by default
+        typescript: TS20Pre,
         target: 'es5',
         module: 'es6',
         declaration: false,
@@ -26,6 +27,7 @@ export default {
         {
             dest: "build/test_bundle.js",
             moduleName: 'sikky_iife',
+            // For ES2015 bundle, we need to use the 'iife' format
             format: 'iife',
             sourceMap: 'inline'
         }
