@@ -60,9 +60,6 @@ npm run build:prod
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
-* `npm run lint:src` - validates your source files
-* `npm run lint:tests` - validates your unit tests
-* `npm run test` - runs unit tests in the browser with Chrome
 * `npm run tdd` - run all unit tests and watch files for changes
 
 ## Typings
