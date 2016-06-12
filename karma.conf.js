@@ -4,6 +4,7 @@ module.exports = function(config) {
 		files: [
 			'build/sikky.specs.js'
 		],
-		frameworks: ['mocha', 'chai']
+		frameworks: ['mocha', 'chai'],
+		reporters: ['mocha']
 	})
 };
