@@ -1,3 +1,21 @@
+## v.0.1.23
+
+- `karma.conf` converted to TypeScript
+
+## v.0.1.22
+
+- updated readme
+- added mocha reporter to Karma
+
+## v.0.1.21
+
+- refactoried how unit testing works
+- uses npn@types by default
+
+## v.0.1.20
+
+- updated dependencies
+
 ## v.0.1.9
 
 - added support for environment variabels

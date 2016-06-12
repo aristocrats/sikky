@@ -13,6 +13,11 @@
     "inlineSourceMap": true,
     "noEmitHelpers": true
   },
+  "exclude": [
+    "build",
+    "dist",
+    "node_modules"
+  ],
   "compileOnSave": false,
   "buildOnSave": false,
   "atom": { "rewriteTsconfig": false }
