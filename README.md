@@ -10,9 +10,13 @@ A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile d
 
 Rollup keep track of the environment variabels, and output both a development and a production build. The production build get minified with `uglify`.
 
-A complete bundle time is assumed to be around 0.4 ms. Depends on your computer. 
+A complete bundle time is assumed to be around 0.4 ms. Depends on your computer and the size of your source files. 
 
 Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
+
+This repo will be continuously updated with the latest technology. There are no plans to integrate NPM packages or other "features" that causes overhead. It will be kept simple, and fast.
+
+If you want something to be added, open an issue ticket and I can see what I can do.
 
 ## Features
 
