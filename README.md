@@ -16,8 +16,6 @@ Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
 
 This repo will be continuously updated with the latest technology, but will never be a full blown workflow. It's purpose is to be kept small and fast, and let you take it a step further after your own needs.
 
-If you want something to be added, open an issue ticket and I can see what I can do.
-
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
