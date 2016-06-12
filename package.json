@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "readmeFilename": "README.md",
@@ -13,9 +13,7 @@
     "build:ts": "cross-env NODE_ENV=development && tsc src/sikky.ts --outDir dist --target es6",
     "build:dev": "cross-env NODE_ENV=development && rollup -c rollup.dev.config.ts",
     "build:prod": "cross-env NODE_ENV=production && rollup -c rollup.prod.config.ts",
-    "lint": "npm run lint:src && npm run lint:tests",
-    "lint:src": "tslint src/**/*.ts src/**/*.tsx",
-    "lint:tests": "tslint test/**/*.ts test/**/*.tsx"
+    "lint": "tslint -c tslint.json src/**/*.ts src/**/*.ts tests/**/*.ts tests/**/*.tsx"
   },
   "repository": {
     "type": "git",
@@ -52,21 +50,17 @@
     "url": "https://github.com/kflash/sikky/issues"
   },
   "homepage": "https://github.com/kflash/sikky",
-  "dependencies": {
-    "semver": "^5.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^2.2.21-alpha",
     "@types/chai": "^3.4.22-alpha",
     "@types/sinon": "^1.16.20-alpha",
     "chai": "^3.5.0",
-    "codelyzer": "0.0.23",
     "cross-env": "^1.0.8",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-sourcemap-loader": "^0.3.7",
-    
     "karma-mocha": "^1.0.1",
     "karma-mocha-reporter": "^2.0.3",
     "mocha": "^2.5.2",
