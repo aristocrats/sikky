@@ -1,16 +1,16 @@
 {
   "name": "sikky",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "readmeFilename": "README.md",
   "scripts": {
     "clean:build": "rm -rf build/",
-    "pretest": "tsc test/sikky.specs.ts typings/tsd.d.ts --outDir build --module system --target es5",
+    "pretest": "rollup -c rollup.test.config.ts",
     "test": "cross-env NODE_ENV=test && karma start karma.conf.ts --no-auto-watch --single-run",
     "watch": "cross-env NODE_ENV=test && karma start karma.conf.ts --auto-watch",
-    "build": "npm run build:ts && npm run build:dev && npm run build:prod",
-    "build:ts": "cross-env NODE_ENV=development && tsc src/sikky.ts --outDir dist --target es6",
+    "prebuild": "tsc src/sikky.ts --outDir build --target es6",
+    "build": "npm run build:dev && npm run build:prod",
     "build:dev": "cross-env NODE_ENV=development && rollup -c rollup.dev.config.ts",
     "build:prod": "cross-env NODE_ENV=production && rollup -c rollup.prod.config.ts",
     "lint": "tslint -c tslint.json src/**/*.ts src/**/*.ts tests/**/*.ts tests/**/*.tsx"
@@ -69,6 +69,8 @@
     "rollup-plugin-commonjs": "^3.0.0",
     "rollup-plugin-replace": "^1.1.0",
     "rollup-plugin-uglify": "^0.3.1",
+    "rollup-plugin-multi-entry": "^1.4.0",
+    "rollup-plugin-typescript": "^0.7.5",
     "tslint": "next",
     "typescript": "next"
   }

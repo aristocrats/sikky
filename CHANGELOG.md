@@ -1,3 +1,7 @@
+## v.0.1.24
+
+- improved UT tests with Karma as the test runner
+
 ## v.0.1.23
 
 - `karma.conf` converted to TypeScript

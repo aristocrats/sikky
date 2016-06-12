@@ -4,12 +4,12 @@ module.exports = (config) => {
     config.set({
         browsers: ['Chrome'],
         files: [
-            'build/sikky.specs.js',
+            'build/test_bundle.js',
             {pattern: "src/**/*.ts", included: false, watched: false},
-            {pattern: "test/**/*.ts", included: false, watched: false},
+            {pattern: "tests/**/*.ts", included: false, watched: false},
         ],
         preprocessors: {
-            'build/sikky.specs.js': ["sourcemap"]
+            'build/test_bundle.js': ["sourcemap"]
         },
         frameworks: ['mocha', 'chai'],
         reporters: ['mocha'],

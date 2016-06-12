@@ -3,7 +3,7 @@ const replace = require('rollup-plugin-replace');
 const pkg = require('./package.json');
 
 export default {
-    entry: 'dist/' +  pkg.name + '.js',
+    entry: 'build/' +  pkg.name + '.js',
     useStrict: false,
     banner: '/**\n' +
     ' * ' + pkg.name + '\n' +
