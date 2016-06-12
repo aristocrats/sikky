@@ -14,7 +14,7 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer 
 
 Unit testing are done with `Karma` + `Mocha` + `TypeScript`.
 
-This repo will be continuously updated with the latest technology, but will never be a full blown workflow. It's purpose is to be kept small and fast, and let you take it a step further after your own needs.
+This repo will be continuously updated with the latest technology, but will never be a full blown workflow. It's purpose is to be kept small and fast, and let you take it a step further...
 
 ## Features
 
