@@ -61,13 +61,10 @@ npm run build:prod
 * `npm run test` - runs unit tests in the browser with Chrome
 * `npm run tdd` - run all unit tests and watch files for changes
 
+## Typings
+
+`npm@types` are used by default. No need for exstra installation.
+
 ## Async/await
 
 Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`.
-
-### Test Driven Development
-
-```bash
-npm run tdd
-```
-
