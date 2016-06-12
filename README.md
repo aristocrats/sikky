@@ -12,7 +12,7 @@ Rollup keep track of the environment variabels, and output both a development an
 
 A complete bundle time is assumed to be around 0.4 ms. Depends on your computer and the size of your source files.
 
-The test stack is done with `Karma` + `Mocha` + `TypeScript`.
+The test stack is done with `Karma` + `Mocha` + `TypeScript`. As a demo Rollup + TS 2.0 are used to pre-compile the UT files before they are picked up by Karma. This can simply be replaced with a `Webpack` or a `Browserify` solution.
 
 This repo will be continuously updated with the latest technology, but will never be a full blown workflow. It's purpose is to be kept small and fast, and let you take it a step further...
 
