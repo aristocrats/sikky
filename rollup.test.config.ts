@@ -15,6 +15,7 @@ export default {
             'process.env.NODE_ENV': "'production'"
         }),
         TypeScript(Object.assign(tsConfig.compilerOptions, {
+            
         // Use the TS 2.0 Pre compiler by default
         typescript: TS20Pre,
         target: 'es5',
