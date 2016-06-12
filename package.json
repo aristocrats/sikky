@@ -4,7 +4,6 @@
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "scripts": {
-    "postinstall": "typings install",
     "pretest": "tsc test/sikky.specs.ts typings/tsd.d.ts --outDir build --module system --target es5",
     "test": "cross-env NODE_ENV=test && karma start karma.conf.js --no-auto-watch --single-run",
     "watch": "cross-env NODE_ENV=test && karma start karma.conf.js --auto-watch",
@@ -54,6 +53,9 @@
     "semver": "^5.1.0"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.21-alpha",
+    "@types/chai": "^3.4.22-alpha",
+    "@types/sinon": "^1.16.20-alpha",
     "chai": "^3.5.0",
     "codelyzer": "0.0.23",
     "cross-env": "^1.0.8",

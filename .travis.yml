@@ -28,7 +28,6 @@ addons:
 matrix:
   include:
     - node_js: 'stable'
-    - node_js: '6'
     - node_js: '5'
     - node_js: '4'
 
@@ -40,8 +39,6 @@ install:
   - du -sh ./node_modules || true
   # Install version of npm that we are locked against
   - npm install -g npm@3
-  # Install latest typings dependency
-  - npm install -g typings
   # - npm config set registry http://23.251.144.68
   # Disable the spinner, it looks bad on Travis
   - npm config set spin false
