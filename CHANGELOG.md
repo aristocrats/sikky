@@ -1,3 +1,8 @@
+## v.0.2.0
+
+- improved TS 2.0 Pre support
+- renamed file extension on a couple of files
+
 ## v.0.1.24
 
 - improved UT tests with Karma as the test runner
