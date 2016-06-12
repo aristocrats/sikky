@@ -14,8 +14,6 @@ A complete bundle time is assumed to be around 0.4 ms. Depends on your computer 
 
 The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 are used to pre-compile the UT files before they are picked up by Karma. This can simply be replaced with a `Webpack` or a `Browserify` solution.
 
-This repo will be continuously updated with the latest technology, but will never be a full blown workflow. It's purpose is to be kept small and fast, and let you take it a step further...
-
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
