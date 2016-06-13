@@ -47,7 +47,7 @@
     "prebuild": "tsc src/sikky.ts --outDir build --target es6",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
-    "watch": "tsc src/cirloc.ts --outDir build --target es6 --w"
+    "watch": "tsc src/sikky.ts --outDir build --target es6 --w"
   },
   "dependencies": {},
   "devDependencies": {
