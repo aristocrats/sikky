@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "readmeFilename": "README.md",
