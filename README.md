@@ -58,7 +58,7 @@ npm run build:prod
 * `npm run lint` - validates all TypeScript files
 * `npm run tdd` - run all unit tests and watch files for changes
 
-# Bundling
+## Bundling
 
 Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code 
 with Sikky, and your code contains errors, you will see something like this in your console:
