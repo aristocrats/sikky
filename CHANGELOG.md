@@ -1,3 +1,7 @@
+# v.0.3.6
+
+- fixed bundle bugs
+
 # v.0.3.2
 
 - improved Travis CI. Added before and after script
