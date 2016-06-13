@@ -1,6 +1,7 @@
 ## Sikky
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
+[![CircleCI](https://circleci.com/gh/Kflash/sikky.svg?style=svg)](https://circleci.com/gh/Kflash/sikky)
 [![npm version](https://badge.fury.io/js/sikky.svg)](https://badge.fury.io/js/sikky)
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
@@ -58,6 +59,10 @@ npm run build:prod
 * `npm run lint` - validates all TypeScript files
 * `npm run tdd` - run all unit tests and watch files for changes
 * `npm run watch` - watch your TypeScript files and trigger recompilation on changes.
+
+## Continuous integration (CI)
+
+Only Travis CI and Circle CI are supported. Configured in the same manner as Angular and React, so easy to make your own personal changes.
 
 ## Bundling
 

@@ -1,3 +1,10 @@
+# 0.2.5
+
+- improved and refactored Travis CI
+- added support for Circle CI to catch up with Angular 2
+- removed a deprecated file
+- updated dependencies
+
 ## v.0.2.4
 
 - added a watch option, to watch the TC files and trigger recompilation on changes.

@@ -1,0 +1,17 @@
+#
+# Build configuration for Circle CI
+#
+
+machine:
+  node:
+    version: 'stable'
+
+dependencies:
+   pre:
+     - npm install -g npm
+   override:
+      - npm install
+test:
+  override:
+    - npm lint
+    - npm test
