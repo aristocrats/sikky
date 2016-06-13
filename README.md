@@ -60,10 +60,6 @@ npm run build:prod
 * `npm run tdd` - run all unit tests and watch files for changes
 * `npm run watch` - watch your TypeScript files and trigger recompilation on changes.
 
-## Continuous integration (CI)
-
-Only Travis CI and Circle CI are supported. Configured in the same manner as Angular and React, so easy to make your own personal changes.
-
 ## Bundling
 
 Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code 
@@ -75,6 +71,23 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 `npm@types` are used by default. No need for exstra installation.
 
+## Continuous integration (CI)
+
+Only Travis CI and Circle CI are supported. Configured in the same manner as Angular and React, so easy to make your own personal changes.
+
+## Test-driven development (TDD) 
+
+It's integrated a watch task for `TypeScript`, and a `tdd` task for the `Mocha+Chai testing stack`.  
+
+## Code coverage
+
+Code coverage will probably not be integrated because I may end up blocking for your own configuration.
+ 
+## Server testing
+ 
+ Server testing with Mocha will not be integrated because there are too many different ways to do it and I have no idea what configuration you prefer :)  
+
 ## Async/await
 
-Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`.
+Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`. The TypeScript compiler only support transpilling async / await down to ES2015, 
+and then the Microsoft team recommend Babel for ES5 bundling. This is out of the scope for this boilerplate.
