@@ -11,7 +11,8 @@ Thumbs.db
 .*.un~
 *.iml
 .tmp
-
+coverage
 node_modules
 typings
 npm-debug.log
+*.ts.html

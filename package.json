@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "author": "KFlash",
@@ -45,7 +45,6 @@
     "lint:src": "tslint -c tslint.json src/**/*.ts src/**/*.tsx",
     "lint:tests": "tslint -c tslint.json tests/**/*.ts tests/**/*.tsx",
     "prebuild": "tsc src/sikky.ts --outDir build --target es6",
-    "pretest": "rollup -c rollup.test.config.js",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "watch": "tsc src/cirloc.ts --outDir build --target es6 --w"
@@ -54,13 +53,15 @@
   "devDependencies": {
     "@types/mocha": "^2.2.21-alpha",
     "@types/chai": "^3.4.22-alpha",
-    "@types/sinon": "^1.16.20-alpha",
     "chai": "^3.5.0",
     "cross-env": "^1.0.8",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
+    "karma-coveralls": "^1.1.2",
+    "karma-coverage": "^1.0.0",
     "karma-chrome-launcher": "^1.0.1",
     "karma-sourcemap-loader": "^0.3.7",
+    "karma-rollup-preprocessor": "^2.0.2",
     "karma-mocha": "^1.0.1",
     "karma-mocha-reporter": "^2.0.3",
     "mocha": "^2.5.2",
@@ -70,6 +71,8 @@
     "rollup-plugin-replace": "^1.1.0",
     "rollup-plugin-uglify": "^1.0.0",
     "rollup-plugin-multi-entry": "^1.4.0",
+    "rollup-plugin-istanbul": "^1.0.0",
+    "rollup-plugin-node-resolve": "^1.7.0",
     "rollup-plugin-typescript": "^0.7.5",
     "tslint": "next",
     "typescript": "next"

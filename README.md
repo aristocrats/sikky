@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 [![CircleCI](https://circleci.com/gh/Kflash/sikky.svg?style=svg)](https://circleci.com/gh/Kflash/sikky)
+[![Coverage Status](https://coveralls.io/repos/github/Kflash/sikky/badge.svg?branch=master)](https://coveralls.io/github/Kflash/sikky?branch=master)
 [![npm version](https://badge.fury.io/js/sikky.svg)](https://badge.fury.io/js/sikky)
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
@@ -30,6 +31,7 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] Test Driven Development (TDD)
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
 - [x] Environment variabels
+- [x] Code Coverage with Istanbul
 - [x] Production and development build with `Rollup`.
 
 ## Quick start
@@ -62,7 +64,7 @@ npm run build:prod
 
 ## Bundling
 
-Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code 
+Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code
 with Sikky, and your code contains errors, you will see something like this in your console:
 
         `src/sikky.ts(1068,18): error TS2339: Property 'parentElement' does not exist on type`
@@ -75,20 +77,19 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 `Travis` and `Circle` are the only supported CI. The configuration is similar to Angular and React.
 
-## Test-driven development (TDD) 
+## Test-driven development (TDD)
 
-It's integrated a watch task for `TypeScript`, and a `tdd` task for the `Mocha+Chai testing stack`.  
+It's integrated a watch task for `TypeScript`, and a `tdd` task for the `Mocha+Chai testing stack`.
 
 ## Code coverage
 
-Code coverage will probably not be integrated because I may end up blocking for your own configuration.
-If you are in a reel need for code coverage report, you may take a look at a boilerplate I'm using for my own projects. Its a modified version of this boilerplate. [Found here:](https://github.com/cirloc/cirloc)
+`Istanbul` are used to generate the coverage report.
 
 ## Server testing
- 
- Server testing with Mocha will not be integrated because there are too many different ways to do it and I have no idea what configuration you prefer :)  
+
+ Server testing with Mocha will not be integrated because there are too many different ways to do it and I have no idea what configuration you prefer :)
 
 ## Async/await
 
-Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`. The TypeScript compiler only support transpilling async / await down to ES2015, 
+Async/await are only supported for TS 2.0 with target set to `ES6` or `ES2015`. The TypeScript compiler only support transpilling async / await down to ES2015,
 and then the Microsoft team recommend Babel for ES5 bundling. This is out of the scope for this boilerplate.

@@ -2,6 +2,7 @@ import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
+import nodeResolve from 'rollup-plugin-node-resolve';
 const pkg = require('./package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
@@ -26,6 +27,10 @@ export default {
 				drop_debugger: true
 			}
 		}) : {},
+        nodeResolve({
+              jsnext: true,
+              main: true
+        }),
 		replace({
 			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), // either production or development
 		}),

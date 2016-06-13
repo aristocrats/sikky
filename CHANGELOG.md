@@ -1,3 +1,11 @@
+# v.0.4.0
+
+- refactored unit testing
+- added code coverage
+- refactored bundling
+- fixed readme
+- updated dependencies
+
 # v.0.3.6
 
 - fixed bundle bugs
@@ -26,7 +34,7 @@
 ## v.0.2.4
 
 - added a watch option, to watch the TC files and trigger recompilation on changes.
-- improved error checking for TC 
+- improved error checking for TC
 - JavaScript files are not allowed to be compiled
 
 ## v.0.2.3
