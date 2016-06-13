@@ -1,4 +1,8 @@
-## v.0.2.1
+## v.0.2.3
+
+- reduced the size of the workflow. Less configuration files
+
+## v.0.2.2
 
 - improved linting and added new rules
 - updated readme

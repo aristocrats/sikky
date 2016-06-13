@@ -1,18 +1,18 @@
 {
   "name": "sikky",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
   "main": "dist/sikky.js",
   "readmeFilename": "README.md",
   "scripts": {
     "clean:build": "rm -rf build/",
     "pretest": "rollup -c rollup.test.config.js",
-    "test": "cross-env NODE_ENV=test && karma start karma.conf.js --no-auto-watch --single-run",
-    "watch": "cross-env NODE_ENV=test && karma start karma.conf.js --auto-watch",
+    "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
+    "watch": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "prebuild": "tsc src/sikky.ts --outDir build --target es6",
     "build": "npm run build:dev && npm run build:prod",
-    "build:dev": "cross-env NODE_ENV=development && rollup -c rollup.dev.config.js",
-    "build:prod": "cross-env NODE_ENV=production && rollup -c rollup.prod.config.js",
+    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
+    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
     "lint": "tslint -c tslint.json src/**/*.ts src/**/*.ts tests/**/*.ts tests/**/*.tsx"
   },
   "repository": {

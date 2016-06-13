@@ -1,6 +1,6 @@
 /**
  * sikky
- * @version 0.2.0
+ * @version 0.2.2
  * @copyright (c) 2016 KFlash
  * @license MIT <https://github.com/kflash/sikky/blob/master/LICENSE>
  */
@@ -15,4 +15,4 @@
 	return sikky;
 
 }));
-//# sourceMappingURL=sikky.es5.js.map
+//# sourceMappingURL=sikky.js.map
