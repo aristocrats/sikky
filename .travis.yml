@@ -29,11 +29,6 @@ cache:
   directories:
     - node_modules
 
-deploy:
-  on: tags: true
-  provider: npm
-  email: ""
-
 before_install:
   - ./scripts/ci/before.sh
 
