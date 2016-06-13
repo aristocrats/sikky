@@ -82,7 +82,8 @@ It's integrated a watch task for `TypeScript`, and a `tdd` task for the `Mocha+C
 ## Code coverage
 
 Code coverage will probably not be integrated because I may end up blocking for your own configuration.
- 
+If you are in a reel need for code coverage report, you may take a look at a boilerplate I'm using for my own projects. Its a modified version of this boilerplate. [Found here:](https://github.com/cirloc/cirloc)
+
 ## Server testing
  
  Server testing with Mocha will not be integrated because there are too many different ways to do it and I have no idea what configuration you prefer :)  
