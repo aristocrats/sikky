@@ -24,11 +24,11 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] Intelligent code editing with [VSCode](https://code.visualstudio.com/)
 - [x] SourceMap
 - [x] TSX / JSX
-- [x] Experimental support for ES7 decorators.
+- [x] Experimental support for [ES7](https://tc39.github.io/ecma262/) decorators.
 - [x] Async, await and generators
-- [x] Karma as the test runner
+- [x] [Karma](https://karma-runner.github.io/0.13/index.html) as the test runner
 - [x] Test Driven Development (TDD)
-- [x] Mocha & chai de facto standard
+- [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
 - [x] Environment variabels
 - [x] Production and development build with `Rollup`.
 
@@ -52,7 +52,6 @@ npm run build:prod
 
 ## Workflow
 
-* `npm run build:ts` - transpile TypeScript down to ES2015 with experimental support for ES2016 decorators
 * `npm run build` - transpile down to ES5 and builds a bundle both for development and production
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
@@ -74,7 +73,7 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 ## Continuous integration (CI)
 
-Only Travis CI and Circle CI are supported. Configured in the same manner as Angular and React, so easy to make your own personal changes.
+`Travis` and `Circle` are the only supported CI. The configuration is similar to Angular and React.
 
 ## Test-driven development (TDD) 
 
