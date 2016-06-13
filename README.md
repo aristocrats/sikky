@@ -61,7 +61,7 @@ npm run build:prod
 # Bundling
 
 Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code 
-with Sikky, and your code contains errors, you will see error messages like this in your console:
+with Sikky, and your code contains errors, you will see something like this in your console:
 
         `src/sikky.ts(1068,18): error TS2339: Property 'parentElement' does not exist on type`
 
