@@ -1,6 +1,7 @@
 ## Read and contribute to the Wiki
 
 Make sure you read the Wiki
+https://github.com/kflash/sikky
 
 ## Submitting Pull Requests
 If you're changing the structure of the repository please create an issue first
