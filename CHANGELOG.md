@@ -1,3 +1,8 @@
+## v.0.2.1
+
+- improved linting and added new rules
+- updated readme
+
 ## v.0.2.0
 
 - improved TS 2.0 Pre support

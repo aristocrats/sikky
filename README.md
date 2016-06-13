@@ -58,6 +58,14 @@ npm run build:prod
 * `npm run lint` - validates all TypeScript files
 * `npm run tdd` - run all unit tests and watch files for changes
 
+# Bundling
+
+Mostly in all other workflows, you are allowed to bundle your code with TS errors. That can cost you many hours of frustration.
+So if you try to bundle with Sikky, and there exist errors in your code, you are not allowed to do so. You will see errors like this:
+
+        ```src/sikky.ts(1068,18): error TS2339: Property 'parentElement' does not exist on type```
+
+
 ## Typings
 
 `npm@types` are used by default. No need for exstra installation.

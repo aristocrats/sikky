@@ -13,7 +13,7 @@ export default {
     ' */',
     plugins: [
         replace({
-            'process.env.NODE_ENV': "'development'"
+            ENVIRONMENT: JSON.stringify('production')
         }),
         buble(),
     ],

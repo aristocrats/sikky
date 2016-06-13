@@ -8,7 +8,7 @@ describe('Simple tests', () => {
         expect(true).to.eql(true);
     });
 
-    it("should return sum", () => {
+    it('should return sum', () => {
         const sum: number = Sikky(1, 1);
         expect(sum).to.eql(2);
     });

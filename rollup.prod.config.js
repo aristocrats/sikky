@@ -8,7 +8,7 @@ export default {
     useStrict: false,
     plugins: [
         replace({
-            'process.env.NODE_ENV': "'production'"
+            ENVIRONMENT: JSON.stringify('production')
         }),
         buble(),
         uglify({
