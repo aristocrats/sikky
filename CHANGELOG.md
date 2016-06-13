@@ -1,3 +1,7 @@
+# 0.2.8
+
+- force linting of source files when running the build task
+
 # 0.2.5
 
 - improved and refactored Travis CI
