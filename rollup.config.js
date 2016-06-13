@@ -1,6 +1,7 @@
 import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
+import commonjs from 'rollup-plugin-commonjs';
 const pkg = require('./package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
@@ -28,6 +29,9 @@ export default {
 		replace({
 			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), // either production or development
 		}),
+		commonjs({
+			include: 'node_modules/**',  // Default: undefined
+		}),
 		buble(),
 	],
 	targets: [
@@ -39,3 +43,6 @@ export default {
 		}
 	]
 };
+
+
+

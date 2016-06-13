@@ -11,7 +11,7 @@ A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile d
 
 Rollup keep track of the environment variabels, and output both a development and a production build. The production build get minified with `uglify`.
 
-A complete bundle time is assumed to be around 0.4 ms. Depends on your computer and the size of your source files.
+A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests. Depends on your computer and the size of your source files.
 
 The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 are used to pre-compile the UT files before they are picked up by Karma. This can simply be replaced with a `Webpack` or a `Browserify` solution.
 

@@ -57,7 +57,6 @@
     "no-var-keyword": true,
     "radix": true,
     "semicolon": [true, "always"],
-    "sort-object-literal-keys": true,
     "switch-default": true,
     "triple-equals": [true, "allow-null-check"],
     "quotemark": [true, "single", "jsx-single", "avoid-escape"],

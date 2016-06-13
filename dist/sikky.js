@@ -1,6 +1,6 @@
 /**
  * sikky
- * @version 0.2.7
+ * @version 0.3.5
  * @copyright (c) 2016 KFlash
  * @license MIT <https://github.com/kflash/sikky/blob/master/LICENSE>
  */
