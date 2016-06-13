@@ -1,3 +1,9 @@
+## v.0.2.4
+
+- added a watch option, to watch the TC files and trigger recompilation on changes.
+- improved error checking for TC 
+- JavaScript files are not allowed to be compiled
+
 ## v.0.2.3
 
 - reduced the size of the workflow. Less configuration files

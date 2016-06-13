@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": false,
+    "allowUnreachableCode": false,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "newLine": "LF",

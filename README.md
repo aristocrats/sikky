@@ -57,6 +57,7 @@ npm run build:prod
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
 * `npm run lint` - validates all TypeScript files
 * `npm run tdd` - run all unit tests and watch files for changes
+* `npm run watch` - watch your TypeScript files and trigger recompilation on changes.
 
 ## Bundling
 
