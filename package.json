@@ -1,25 +1,20 @@
 {
   "name": "sikky",
   "version": "0.3.0",
-  "description": "TypeScript 2.0 Pre boilerplate that aims to be the fastest and smallest.",
+  "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
-  "readmeFilename": "README.md",
-  "scripts": {
-    "prebuild": "tsc src/sikky.ts --outDir build --target es6",
-    "build": "npm run lint:src && npm run build:dev && npm run build:prod",
-    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
-    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
-    "clean:build": "rm -rf build/",
-    "lint:src": "tslint -c tslint.json src/**/*.ts src/**/*.tsx",
-    "lint:tests": "tslint -c tslint.json tests/**/*.ts tests/**/*.tsx",
-    "pretest": "rollup -c rollup.test.config.js",
-    "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
-    "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
-    "watch": "tsc src/cirloc.ts --outDir build --target es6 --w"
+  "author": "KFlash",
+  "homepage": "https://github.com/kflash/sikky",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 5.4.1 < 6"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kflash/sikky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kflash/sikky/issues"
   },
   "keywords": [
     "es6",
@@ -42,12 +37,19 @@
     "src",
     "dist"
   ],
-  "author": "KFlash",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kflash/sikky/issues"
+  "scripts": {
+    "build": "npm run lint:src && npm run build:dev && npm run build:prod",
+    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
+    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "clean:build": "rm -rf build/",
+    "lint:src": "tslint -c tslint.json src/**/*.ts src/**/*.tsx",
+    "lint:tests": "tslint -c tslint.json tests/**/*.ts tests/**/*.tsx",
+    "prebuild": "tsc src/sikky.ts --outDir build --target es6",
+    "pretest": "rollup -c rollup.test.config.js",
+    "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
+    "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
+    "watch": "tsc src/cirloc.ts --outDir build --target es6 --w"
   },
-  "homepage": "https://github.com/kflash/sikky",
   "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^2.2.21-alpha",
