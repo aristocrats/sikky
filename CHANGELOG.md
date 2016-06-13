@@ -1,14 +1,18 @@
-# 0.3.0
+# v.0.3.2
+
+- improved Travis CI. Added before and after script
+
+# v.0.3.0
 
 - improved `TSLint` rules. Equal to `Angular 2`
 - refactored `package.json`
 - refactored `README.md`
 
-# 0.2.8
+# v.0.2.8
 
 - force linting of source files when running the build task
 
-# 0.2.5
+# v.0.2.5
 
 - improved and refactored `Travis CI`
 - added support for `Circle CI` to catch up with `Angular 2`

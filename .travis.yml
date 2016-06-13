@@ -1,4 +1,7 @@
+# After changing this file, check it on:
+# http://lint.travis-ci.org/
 language: node_js
+# Is `sudo` required? If not, jobs are run on container-based infrastructure.
 sudo: required
 dist: trusty
 node_js:
@@ -7,8 +10,11 @@ node_js:
   - "6"
 
 addons:
+#  firefox: "38.0"
   apt:
     sources:
+      # needed to install g++ that is used by npms's native modules
+      - ubuntu-toolchain-r-test
       - google-chrome
     packages:
       - g++
@@ -18,8 +24,19 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - ./tools/ci/before.sh
+
 install:
-  - ./scripts/ci/install.sh
+  - ./tools/ci/install.sh
 
 script:
-  - ./scripts/ci/test.sh
+  - ./tools/ci/test.sh
+
+after_success:
+  - ./tools/ci/after.sh
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
