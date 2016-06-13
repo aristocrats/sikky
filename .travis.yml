@@ -25,16 +25,16 @@ cache:
     - node_modules
 
 before_install:
-  - ./tools/ci/before.sh
+  - ./scripts/ci/before.sh
 
 install:
-  - ./tools/ci/install.sh
+  - ./scripts/ci/install.sh
 
 script:
-  - ./tools/ci/test.sh
+  - ./scripts/ci/test.sh
 
 after_success:
-  - ./tools/ci/after.sh
+  - ./scripts/ci/after.sh
 
 notifications:
   email:
