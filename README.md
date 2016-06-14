@@ -7,7 +7,9 @@
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
 
-A very fast, and small sized boilerplate. Uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle.
+> A very fast, and small sized TypeScript 2.0 boilerplate. Uses 
+
+This boilerplate uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle.
 `Bublé` is used for compability with older browsers. Easy to get rid of or replaced with Babel.
 
 Rollup keep track of the environment variabels, and output both a development and a production build. The production build get minified with `uglify`.
