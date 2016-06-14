@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "author": "KFlash",
@@ -41,7 +41,9 @@
     "build": "npm run lint:src && npm run build:dev && npm run build:prod",
     "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
     "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "clean": "rm -rf coverage/ dist/ build/",
     "clean:build": "rm -rf build/",
+    "clean:dist": "rm -rf dist/",
     "lint:src": "tslint -c tslint.json src/**/*.ts src/**/*.tsx",
     "lint:tests": "tslint -c tslint.json tests/**/*.ts tests/**/*.tsx",
     "prebuild": "tsc src/sikky.ts --outDir build --target es6",
