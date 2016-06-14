@@ -8,7 +8,8 @@
   "homepage": "https://github.com/kflash/sikky",
   "license": "MIT",
   "engines": {
-    "node": ">= 5.4.1 < 6"
+    "node": ">= 5.4.1 < 6",
+    "vscode": ">=1.0.0 < 2"
   },
   "repository": {
     "type": "git",
