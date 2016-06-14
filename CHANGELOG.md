@@ -1,3 +1,7 @@
+# v.0.5.6
+
+- updated dependencies.
+
 # v.0.5.5
 
 - updated dependencies. 
