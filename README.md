@@ -30,6 +30,7 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] [Karma](https://karma-runner.github.io/0.13/index.html) as the test runner
 - [x] Test Driven Development (TDD)
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
+- [x] [Sinon](http://sinonjs.org/) for test doubles
 - [x] Environment variabels
 - [x] Code Coverage with Istanbul
 - [x] Production and development build with `Rollup`.

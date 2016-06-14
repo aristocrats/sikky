@@ -1,3 +1,8 @@
+# v.0.4.4
+
+- added Sinon for test doubles
+- minor improvements to Karma
+
 # v.0.4.3
 
 - improved TS configuration

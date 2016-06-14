@@ -12,7 +12,6 @@ module.exports = (config) => {
 		files: [
 			'./tests/**/*.ts'
 		],
-
 		preprocessors: {
 			'./src/**/*.ts': ['rollup'],
 			'./tests/**/*.ts': ['rollup']
@@ -22,9 +21,9 @@ module.exports = (config) => {
 				plugins: [
 					multiEntry(),
 					TSPlugin(
-					// 'rollup's typescript plugin are using TS v. 1.8 by default. 
-					// To be able to use latest TS 2.0 Pre version, we need to overwrite it because.
-					// the plugin doesn't automatically pick up the installed TS in 'mode_modules' 
+						// 'rollup's typescript plugin are using TS v. 1.8 by default.
+						// To be able to use latest TS 2.0 Pre version, we need to overwrite it because.
+						// the plugin doesn't automatically pick up the installed TS in 'mode_modules'
 						Object.assign(TSConfig.compilerOptions, {
 							typescript: TypeScript, // TS 2.0 Pre
 							module: 'es6'
@@ -34,14 +33,16 @@ module.exports = (config) => {
 						exclude: 'node_modules/**'
 					}),
 					istanbul({
-						include: ['**/*.ts'],
+						include: ['**/*.ts'], // we need this to avoid the multi-entry plugin from throwing errors
 						ignore: ['**/node_modules/**', '**/tests/**'],
 						exclude: ['tests/**/*.ts']
 					})
 				]
 			},
 			bundle: {
-				sourceMap: false
+				intro: '(function() {',
+				outro: '})();',
+				sourceMap: true
 			}
 		},
 		coverageReporter: {
@@ -54,10 +55,19 @@ module.exports = (config) => {
 				{ type: 'html' }
 			]
 		},
+
+		logLevel: config.LOG_INFO,
+
+		// change Karma's debug.html to the mocha web reporter
+		client: {
+			mocha: {
+				reporter: 'html'
+			}
+		},
 		colors: true,
 		autoWatch: false,
 		browsers: ['Chrome'],
-		frameworks: ['mocha', 'chai'],
+		frameworks: ['mocha', 'chai', 'sinon-chai'],
 		reporters: ['mocha', 'coverage'],
 		concurrency: 4,
 		browserDisconnectTimeout: 10000,
@@ -67,7 +77,7 @@ module.exports = (config) => {
 
 	if (isCI) {
 		config.captureTimeout = 0;
-		// Push 'coveralls' to the reporters array if Travis, Circle or other continuous integration are running
+		// Push 'coveralls' to the reporters array if Travis or Circle are running
 		config.reporters.push('coveralls');
 	}
 };
