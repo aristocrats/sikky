@@ -7,6 +7,7 @@ describe('Sinon’s Spy', () => {
 
         SinonDemo(true, callback);
 
+        chai.assert(callback.calledOnce);
     });
 });
 
