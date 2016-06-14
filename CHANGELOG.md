@@ -1,3 +1,8 @@
+# v.0.4.10
+
+- updated the TC compiler with newest version 
+- updated readme
+
 # v.0.4.9
 
 - added new flags to the TC compiler for bundling source files
