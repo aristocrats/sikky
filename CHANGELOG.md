@@ -1,3 +1,7 @@
+# v.0.4.11
+
+- TypeScript watch task now support dead code elimination for ES6 modules
+
 # v.0.4.10
 
 - updated the TC compiler with newest version 

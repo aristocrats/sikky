@@ -85,9 +85,14 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 `Travis` and `Circle` are the only supported CI. The configuration is similar to Angular and React.
 
+## Watch tasks
+
+With the `npm run watch`, the TypeScript 2.0 compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default.
+When you are done watching, you can transpile back to ES5 with the `npm run build` to bundle both a production and development build.
+
 ## Test-driven development (TDD)
 
-It's integrated a watch task for `TypeScript`, and a `tdd` task for the `Mocha+Chai testing stack`.
+It's integrated a `tdd` task for the `Mocha+Chai testing stack` to watch your UT files.
 
 ## Code coverage
 
