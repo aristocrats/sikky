@@ -50,9 +50,8 @@
     "clean": "rm -rf coverage/ dist/ build/",
     "clean:build": "rm -rf build/",
     "clean:dist": "rm -rf dist/",
-    "lint:src": "tslint -c tslint.json src/**/*.ts src/**/*.tsx",
-    "lint:tests": "tslint -c tslint.json tests/**/*.ts tests/**/*.tsx",
     "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es6",
+    "pretest": "npm run lint:tests",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "watch": "tsc src/sikky.ts --outDir build --target es6 --w"

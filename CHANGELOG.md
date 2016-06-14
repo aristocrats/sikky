@@ -1,3 +1,9 @@
+# v.0.4.7
+
+- improved linting
+- fixed it so tests get linted before they are run
+- improved Circle CI support
+
 # v.0.4.6
 
 - added Lolex to fake JavaScript timers

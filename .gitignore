@@ -16,3 +16,5 @@ node_modules
 typings
 npm-debug.log
 *.ts.html
+typings/*
+!typings/created/

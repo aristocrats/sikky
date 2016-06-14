@@ -1,19 +1,31 @@
+#####
+# Circle CI
 #
-# Build configuration for Circle CI
-#
+# For running docker images on circle ci, see: https://circleci.com/docs/docker
+# For circle.yml explanation, see: https://circleci.com/docs/manually
+#####
 
 machine:
   node:
     version: 'stable'
 
 dependencies:
-   pre:
+  cache_directories:
+    - node_modules
+  pre:
      - npm set progress=false
+     - export DISPLAY=:99.0
      - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
-     - npm install -g npm
-   override:
-      - npm install
+     # Clean out node-modules to prevent issues with circle-ci's caching.
+     - rm -rf node_modules
+  override:
+     - npm install
+
 test:
+  post:
+    - npm run build
+    - npm start:
+        background: true
   override:
    - nvm use 4 && npm test
    - nvm use 5 && npm test
