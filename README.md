@@ -83,8 +83,8 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 ## Watch
 
-With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default.
-When you are done watching, you can transpile back to `ES5` with the `npm run build` to bundle both a production and development build.
+With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either 
+`Webpack 2.0` (*early beta stage*) or `Rollup` to perform tree shaking.
 
 Also Rollup have it's own watch task, but not part of this boilerplate.'
 
