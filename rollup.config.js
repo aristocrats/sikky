@@ -6,8 +6,9 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 const pkg = require('./package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
+const DEVELOPMENT = process.env.NODE_ENV === 'development';
 
-export default {
+const config = {
 	entry: 'build/' +  pkg.name + '.js',
 	useStrict: false,
 	banner:
@@ -48,6 +49,18 @@ export default {
 		}
 	]
 };
+
+// Support for Javascript Modules
+// NOTE! This will change soon regarding the specs
+if (DEVELOPMENT) {
+	config.targets.push({
+		dest: 'dist/sikky.mjs',
+		format: 'es6',
+		sourceMap: true
+	})
+}
+
+export default config;
 
 
 

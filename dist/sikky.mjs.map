@@ -1,0 +1,1 @@
+{"version":3,"file":null,"sources":["../build/sikky.js"],"sourcesContent":["export default (x, y) => x + y;\r\n"],"names":[],"mappings":";;;;;;AAAA,gBAAgB,CAAC,EAAE,CAAC,EAAE,SAAG,CAAC,GAAG,CAAC,GAAA,CAAC;;"}

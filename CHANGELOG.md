@@ -1,3 +1,7 @@
+# v.0.4.5
+
+- support for ECMAScript 2015 modules in Node.
+
 # v.0.4.4
 
 - added Sinon for test doubles
