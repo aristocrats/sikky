@@ -74,7 +74,7 @@
     "rollup-plugin-istanbul": "^1.0.0",
     "rollup-plugin-node-resolve": "^1.7.0",
     "rollup-plugin-typescript": "^0.7.5",
-    "tslint": "next",
-    "typescript": "next"
+    "tslint": "3.11.0",
+    "typescript": "1.9.0-dev.20160613-1.0"
   }
 }
