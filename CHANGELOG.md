@@ -1,3 +1,7 @@
+# v.0.4.8
+
+- added .vscodeignore
+
 # v.0.4.7
 
 - improved linting

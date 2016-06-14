@@ -1,0 +1,7 @@
+tests/**/*
+src/**/*
+.gitignore
+.travis.yml
+.vscode/**/*
+appveyor.yml
+README.md
