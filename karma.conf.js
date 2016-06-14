@@ -10,11 +10,11 @@ const isCI = process.env.CONTINUOUS_INTEGRATION === 'true';
 module.exports = (config) => {
 	config.set({
 		files: [
-			'./tests/**/*.ts'
+			'./test/**/*.ts'
 		],
 		preprocessors: {
 			'./src/**/*.ts': ['rollup'],
-			'./tests/**/*.ts': ['rollup']
+			'./test/**/*.ts': ['rollup']
 		},
 		rollupPreprocessor: {
 			rollup: {
@@ -34,8 +34,8 @@ module.exports = (config) => {
 					}),
 					istanbul({
 						include: ['**/*.ts'], // we need this to avoid the multi-entry plugin from throwing errors
-						ignore: ['**/node_modules/**', '**/tests/**'],
-						exclude: ['tests/**/*.ts']
+						ignore: ['**/node_modules/**', '**/test/**'],
+						exclude: ['test/**/*.ts']
 					})
 				]
 			},

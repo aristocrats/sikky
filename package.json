@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -51,6 +51,7 @@
     "clean:dist": "rm -rf dist/",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
     "lint:tests": "tslint tests/**/*.tsx tests/**/*.ts --ignore-path .gitignore",
+    "preinstall": "typings install",
     "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration --skipLibCheck",
     "pretest": "npm run lint:tests",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",

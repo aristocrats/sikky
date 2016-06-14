@@ -1,3 +1,9 @@
+# v.0.5.7
+
+- renamed tests folder to test so it can be found by mocha
+- fixed issues with VSCode. Didn't pick up Mocha correctly'
+- fixed issues with typings
+
 # v.0.5.6
 
 - updated dependencies.
