@@ -1,17 +1,22 @@
+# v.0.5.0
+
+- replaced `--module` with the new `--lib` param
+- solved a watch issue
+
 # v.0.4.11
 
 - TypeScript watch task now support dead code elimination for ES6 modules
 
 # v.0.4.10
 
-- updated the TC compiler with newest version 
+- updated TSC with newest version 
 - updated readme
 
 # v.0.4.9
 
-- added new flags to the TC compiler for bundling source files
+- added new flags to TSC for bundling source files
 - allow dead code elimination for ES6 modules
-- updated the TC compiler with newest version
+- updated TS to newest version
 
 # v.0.4.8
 
