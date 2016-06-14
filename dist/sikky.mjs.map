@@ -1,1 +1,1 @@
-{"version":3,"file":null,"sources":["../build/sikky.js"],"sourcesContent":["export default (x, y) => x + y;\r\n"],"names":[],"mappings":";;;;;;AAAA,gBAAgB,CAAC,EAAE,CAAC,EAAE,SAAG,CAAC,GAAG,CAAC,GAAA,CAAC;;"}
+{"version":3,"file":null,"sources":["../build/sikky.js"],"sourcesContent":["export default function (x, y) { return x + y; };\r\n//# sourceMappingURL=sikky.js.map"],"names":[],"mappings":";;;;;;AAAA,gBAAyB,CAAC,EAAE,CAAC,EAAE,EAAE,OAAO,CAAC,GAAG,CAAC,CAAC,EAAE,CAAC;;"}

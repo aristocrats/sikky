@@ -1,3 +1,7 @@
+# v.0.5.3
+
+- fixed a bug
+
 # v.0.5.0
 
 - replaced `--module` with the new `--lib` param
