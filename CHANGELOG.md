@@ -1,3 +1,10 @@
+# v.0.4.3
+
+- improved TS configuration
+- manually force to use latest TS 2.0 Pre version due to issues with @next
+- manually force to use latest TSLint version due to issues with @next
+- added script commands to remove dist and coverage folder
+
 # v.0.4.0
 
 - refactored unit testing

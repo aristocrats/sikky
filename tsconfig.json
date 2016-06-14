@@ -8,6 +8,7 @@
     "strictNullChecks": true,
     "newLine": "LF",
     "jsx": "preserve",
+    "target": "es5",
     "pretty": true,
     "removeComments": false,
     "moduleResolution": "node",

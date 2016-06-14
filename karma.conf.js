@@ -1,9 +1,9 @@
 const buble = require('rollup-plugin-buble');
 const istanbul = require('rollup-plugin-istanbul');
-const TypeScript = require('rollup-plugin-typescript');
+const TSPlugin = require('rollup-plugin-typescript');
 const multiEntry = require('rollup-plugin-multi-entry').default;
-const tsConfig = require('./tsconfig.json');
-const tsc = require('typescript');
+const TSConfig = require('./tsconfig.json');
+const TypeScript = require('typescript');
 
 const isCI = process.env.CONTINUOUS_INTEGRATION === 'true';
 
@@ -21,12 +21,13 @@ module.exports = (config) => {
 			rollup: {
 				plugins: [
 					multiEntry(),
-					TypeScript(
-						Object.assign(tsConfig.compilerOptions, {
-							typescript: tsc,
-							target: 'es5',
-							module: 'es6',
-							declaration: false
+					TSPlugin(
+					// 'rollup's typescript plugin uses TS v. 1.8. To be able to use
+					// latest TS 2.0 Pre version, we need to overwrite it.
+					// This plugin doesn't pick up installed TS in mode_modules automatically
+						Object.assign(TSConfig.compilerOptions, {
+							typescript: TypeScript, // TS 2.0 Pre
+							module: 'es6'
 						})
 					),
 					buble({
@@ -63,10 +64,6 @@ module.exports = (config) => {
 		browserDisconnectTolerance: 2,
 		browserNoActivityTimeout: 30000,
 	});
-
-	// If running a CI environment (eg. Travis or Circle) allocating a browser can take pretty
-	// long time (eg. if we are out of capacity and need to wait for another build to finish) and
-	// so the `captureTimeout` typically kills an in-queue-pending request, which makes no sense.
 
 	if (isCI) {
 		config.captureTimeout = 0;
