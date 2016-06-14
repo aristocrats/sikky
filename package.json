@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.4.7",
+  "version": "0.4.9",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -8,8 +8,7 @@
   "homepage": "https://github.com/kflash/sikky",
   "license": "MIT",
   "engines": {
-    "node": ">= 5.4.1 < 6",
-    "vscode": ">=1.0.0 < 2"
+    "node": ">= 5.4.1 < 6"
   },
   "repository": {
     "type": "git",
@@ -53,7 +52,7 @@
     "clean:dist": "rm -rf dist/",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
     "lint:tests": "tslint tests/**/*.tsx tests/**/*.ts --ignore-path .gitignore",
-    "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration",
+    "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es6 --declaration --skipLibCheck",
     "pretest": "npm run lint:tests",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
@@ -90,6 +89,6 @@
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "tslint": "3.11.0",
-    "typescript": "next"
+    "typescript": "1.9.0-dev.20160614-1.0"
   }
 }

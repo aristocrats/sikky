@@ -1,3 +1,9 @@
+# v.0.4.9
+
+- added new flags to the TC compiler for bundling source files
+- allow dead code elimination for ES6 modules
+- updated the TC compiler with newest version
+
 # v.0.4.8
 
 - added .vscodeignore

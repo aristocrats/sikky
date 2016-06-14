@@ -26,7 +26,7 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] SourceMap
 - [x] TSX / JSX
 - [x] Experimental support for [ES7](https://tc39.github.io/ecma262/) decorators.
-- [x] Async, await and generators
+- [x] async/await and generators support for ES5/ES3
 - [x] [Karma](https://karma-runner.github.io/0.13/index.html) as the test runner
 - [x] Test Driven Development (TDD)
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
@@ -35,6 +35,7 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] Code Coverage with Istanbul
 - [x] Production and development build with `Rollup`.
 - [x] ECMAScript 2015 modules in Node.
+- [x] Allow dead code elimination for ES6 modules
 
 ## Quick start
 
