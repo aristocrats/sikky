@@ -86,8 +86,6 @@ with Sikky, and your code contains errors, you will see something like this in y
 With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either 
 `Webpack 2.0` (*early beta stage*) or `Rollup` to perform tree shaking.
 
-Also Rollup have it's own watch task, but not part of this boilerplate.'
-
 ## Continuous integration (CI)
 
 `Travis` and `Circle` are the only supported `CI`. The configuration is similar to Angular and React.
