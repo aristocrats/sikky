@@ -34,6 +34,7 @@ The test stack is done with `Karma` + `Mocha` + `TypeScript`. Rollup + TS 2.0 ar
 - [x] Environment variabels
 - [x] Code Coverage with Istanbul
 - [x] Production and development build with `Rollup`.
+- [x] ECMAScript 2015 modules in Node.
 
 ## Quick start
 
