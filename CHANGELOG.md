@@ -1,3 +1,8 @@
+# v.0.4.6
+
+- added Lolex to fake JavaScript timers
+- fixed a bug with the unit tests
+
 # v.0.4.5
 
 - support for ECMAScript 2015 modules in Node.
