@@ -1,10 +1,6 @@
 {
   "globalDependencies": {
     "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#ba257a9b91bc0de1bdd9091b6723194c905a902a",
-    "node": "registry:dt/node#6.0.0+20160514165920",
     "source-map": "registry:dt/source-map#0.0.0+20160317120654"
-  },
-  "devDependencies": {
-     "chai": "registry:npm/chai#3.5.0+20160328084239"
   }
 }

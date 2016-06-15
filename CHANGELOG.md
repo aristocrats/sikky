@@ -1,3 +1,8 @@
+# v.0.6.1
+
+- fixed issues with TSC
+- fixed typings issues
+
 # v.0.5.7
 
 - renamed tests folder to test so it can be found by mocha

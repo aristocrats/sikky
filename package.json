@@ -1,6 +1,5 @@
 {
   "name": "sikky",
-  "version": "0.5.7",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -60,7 +59,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/mocha": "^2.2.21-alpha",
     "@types/chai": "^3.4.22-alpha",
     "@types/sinon-chai": "^2.7.20-alpha",
     "chai": "^3.5.0",
