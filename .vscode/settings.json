@@ -2,7 +2,11 @@
 {
   // Controls if the editor will insert spaces for tabs. Accepted values:  "auto", true, false. If set to "auto", the value will be guessed when a file is opened.
   "editor.insertSpaces": true,
-
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "files.eol": "\n",
+  // When enabled, will trim trailing whitespace when you save a file.
+  "files.trimTrailingWhitespace": true,
   // Configure glob patterns for excluding files and folders.
   "files.exclude": {
     "**/npm-debug.log": true,
@@ -12,9 +16,12 @@
     "**/*.js.map": true,
     "build/**": true
   },
-
-  // When enabled, will trim trailing whitespace when you save a file.
-  "files.trimTrailingWhitespace": true,
+  "jscs.enable": false,
+  "jshint.enable": false,
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "tslint.enable": true,
 
   // Specifies the folder path containing the tsserver and lib*.d.ts files to use.
   "typescript.tsdk": "node_modules/typescript/lib"
