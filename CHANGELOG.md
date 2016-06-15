@@ -1,7 +1,10 @@
-# v.0.7.0
+# v.0.8.0
 
 - added server testing
-
+- updated readme
+- updated dependencies
+- added AppVeyor CI support
+- 
 # v.0.6.2
 
 - improved VSCode support
