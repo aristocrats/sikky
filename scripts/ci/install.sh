@@ -5,7 +5,11 @@ set -ex -o pipefail
 echo 'travis_fold:start:INSTALL'
 
 echo 'travis_fold:start:install.npm-cli-tools'
-npm -g install gulp-cli typings karma-cli tslint
+# Install version of npm that we are locked against
+npm install -g npm@3
+npm -g install typings karma-cli tslint
+# Disable the spinner, it looks bad on Travis
+npm config set spin false
 echo 'travis_fold:end:install.npm-cli-tools'
 
 echo 'travis_fold:start:install.node_modules'

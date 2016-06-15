@@ -1,3 +1,8 @@
+# v.0.8.5
+
+- improved Travis
+- updated dependencies
+
 # v.0.8.4
 
 - fixed vscode settings
