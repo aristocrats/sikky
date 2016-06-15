@@ -19,6 +19,7 @@ dependencies:
      # Clean out node-modules to prevent issues with circle-ci's caching.
      - rm -rf node_modules
   override:
+     - npm install typings -g
      - npm install
 
 test:
