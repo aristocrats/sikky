@@ -28,17 +28,10 @@ const config = {
 				drop_debugger: true
 			}
 		}) : {},
-        nodeResolve({
-              jsnext: true,
-              main: true
-        }),
-		replace({
-			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV), // either production or development
-		}),
-		commonjs({
-			include: 'node_modules/**',  // Default: undefined
-		}),
-		buble(),
+		nodeResolve({ jsnext: true, skip: external }),
+		replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
+		commonjs({ include: 'node_modules/**' }),
+		buble({ exclude: 'node_modules/**' })
 	],
 	targets: [
 		{

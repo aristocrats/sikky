@@ -7,9 +7,9 @@ const TypeScript = require('typescript');
 export default {
 	entry: ['test/**/*.ts'],
 	plugins: [
-		TSPlugin(Object.assign(TSConfig.compilerOptions, { typescript: TypeScript, module: 'es6',	declaration: false })),
+		TSPlugin(Object.assign(TSConfig.compilerOptions, { typescript: TypeScript, module: 'es6', declaration: false })),
 		multiEntry(),
-		buble()
+		buble({ exclude: 'node_modules/**' })
 	],
 	intro: 'require("source-map-support").install();var chai = require("chai");var sinon = require("sinon");',
 	dest: 'build/test-bundle.js',

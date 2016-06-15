@@ -56,7 +56,7 @@
     "pretest": "rollup -c rollup.mocha.config.js",
     "test": "npm run test:browser && npm run test:node",
     "test:browser": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
-    "test:node": "cross-env NODE_ENV=test mocha ./build/test-bundle.js --require buble/register",
+    "test:node": "cross-env NODE_ENV=test mocha ./build/test-bundle.js --compilers js:buble/register",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "watch": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration --skipLibCheck --w"
   },

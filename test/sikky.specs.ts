@@ -12,5 +12,4 @@ describe('Simple tests', () => {
         const sum: number = Sikky(1, 1);
         expect(sum).to.eql(2);
     });
-
 });

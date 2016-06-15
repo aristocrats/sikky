@@ -1,3 +1,8 @@
+# v.0.8.2
+
+- fixed issues with server testing
+- cleaned up the bundle process
+
 # v.0.8.1
 
 - improved server testing
