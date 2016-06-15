@@ -90,11 +90,11 @@ with Sikky, and your code contains errors, you will see something like this in y
 With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
 `Webpack 2.0` (*early beta stage*) or `Rollup` to perform tree shaking.
 
-The watch task inform you if something is wrong with your code, and can come up with suggestion on how to solve current issue.
+The watch task inform you if something is wrong with your code, and can come up with suggestions on how to solve current issue.
 
 ```bash
 7:28:24 PM - File change detected. Starting incremental compilation...
-src/universal/foo.ts(7,10): error TS2348: Value of type 'typeof TeeSpoon' is not callable. 
+src/universal/foo.ts(7,10): error TS2348: Value of type 'typeof TeaSpoon' is not callable. 
 Did you mean to include 'new'?
 ```
 
