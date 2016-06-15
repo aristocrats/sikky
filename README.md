@@ -94,7 +94,8 @@ The watch task inform you if something is wrong with your code, and can come up 
 
 ```bash
 7:28:24 PM - File change detected. Starting incremental compilation...
-src/universal/foo.ts(7,10): error TS2348: Value of type 'typeof TeeSpoon' is not callable. Did you mean to include 'new'?
+src/universal/foo.ts(7,10): error TS2348: Value of type 'typeof TeeSpoon' is not callable. 
+Did you mean to include 'new'?
 ```
 
 ## Continuous integration (CI)
