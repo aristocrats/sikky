@@ -1,3 +1,10 @@
+# v.0.8.4
+
+- fixed vscode settings
+- improved static typing
+- improved the watch task
+- updated readme
+
 # v.0.8.2
 
 - fixed issues with server testing
@@ -7,14 +14,14 @@
 
 - improved server testing
 - shaved down the dependency tree
- 
+
 # v.0.8.0
 
 - added server testing
 - updated readme
 - updated dependencies
 - added AppVeyor CI support
-- 
+-
 # v.0.6.2
 
 - improved VSCode support
@@ -36,7 +43,7 @@
 
 # v.0.5.5
 
-- updated dependencies. 
+- updated dependencies.
 
 # v.0.5.3
 
@@ -53,7 +60,7 @@
 
 # v.0.4.10
 
-- updated TSC with newest version 
+- updated TSC with newest version
 - updated readme
 
 # v.0.4.9

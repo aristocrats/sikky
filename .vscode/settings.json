@@ -9,12 +9,12 @@
   "files.trimTrailingWhitespace": true,
   // Configure glob patterns for excluding files and folders.
   "files.exclude": {
-    "**/npm-debug.log": true,
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "node_modules/**": true,
-    "**/*.js.map": true,
-    "build/**": true
+       "**/npm-debug.log": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "node_modules/**": true,
+        "**/*.js.map": true,
+        "build/**": true
   },
   "jscs.enable": false,
   "jshint.enable": false,

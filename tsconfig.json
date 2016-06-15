@@ -1,7 +1,7 @@
-{
-  "buildOnSave": false,
+{ "buildOnSave": false,
   "compileOnSave": false,
-  "compilerOptions": {
+  "compilerOptions":
+  {
     "allowJs": false,
     "allowUnreachableCode": false,
     "noImplicitAny": true,

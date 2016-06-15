@@ -58,11 +58,10 @@ module.exports = (config) => {
 
 		logLevel: config.LOG_INFO,
 
-		// change Karma's debug.html to the mocha web reporter
 		client: {
-			mocha: {
-				reporter: 'html'
-			}
+			args: ['--grep', config.grep || ''],
+            // change Karma's debug.html to the mocha web reporter
+            mocha: { reporter: 'html' }
 		},
 		colors: true,
 		autoWatch: false,
