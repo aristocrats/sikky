@@ -11,7 +11,7 @@ export default {
 		multiEntry(),
 		buble({ exclude: 'node_modules/**' })
 	],
-	intro: 'require("source-map-support").install();var chai = require("chai");var sinon = require("sinon");',
+	intro: 'var chai = require("chai");var sinon = require("sinon");',
 	dest: 'build/test-bundle.js',
 	sourceMap: true
 };
