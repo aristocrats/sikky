@@ -104,7 +104,7 @@ It's integrated a `tdd` task for the `Mocha+Chai testing stack` to watch your UT
 
 ## Server testing
 
- A basic server testing solution with Mocha + Rollup is integrated to give a hint on of hit can be done. `npm run test:node`
+ A basic server testing solution with Mocha + Rollup is integrated.
 
 ## Async/await
 
