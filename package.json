@@ -89,6 +89,8 @@
     "rollup-plugin-typescript": "^0.7.5",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
+    "source-map": "^0.5.6",
+    "source-map-support": "^0.4.0",
     "tslint": "next",
     "typescript": "next",
     "typings": "^1.1.0"
