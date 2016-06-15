@@ -81,10 +81,6 @@ with Sikky, and your code contains errors, you will see something like this in y
 
         `src/sikky.ts(1068,18): error TS2339: Property 'parentElement' does not exist on type`
 
-## Typings
-
-`npm@types` are used by default. No need for exstra installation.
-
 ## Watch
 
 With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
