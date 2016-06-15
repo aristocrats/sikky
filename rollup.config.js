@@ -28,7 +28,7 @@ const config = {
 				drop_debugger: true
 			}
 		}) : {},
-		nodeResolve({ jsnext: true, skip: external }),
+		nodeResolve({ jsnext: true, main: true }),
 		replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
 		commonjs({ include: 'node_modules/**' }),
 		buble({ exclude: 'node_modules/**' })
