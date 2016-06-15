@@ -1,3 +1,7 @@
+# v.0.6.2
+
+- improved VSCode support
+
 # v.0.6.1
 
 - fixed issues with TSC

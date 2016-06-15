@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
