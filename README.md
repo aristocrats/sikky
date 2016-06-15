@@ -8,7 +8,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
 
-> A very fast, and small sized TypeScript 2.0 boilerplate. 
+> A very fast, and small sized TypeScript 2.0 boilerplate.
 
 This boilerplate uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle.
 `Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
@@ -87,8 +87,15 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 ## Watch
 
-With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either 
+With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
 `Webpack 2.0` (*early beta stage*) or `Rollup` to perform tree shaking.
+
+The watch task inform you if something is wrong with your code, and can come up with suggestion on how to solve current issue.
+
+```bash
+7:28:24 PM - File change detected. Starting incremental compilation...
+src/universal/foo.ts(7,10): error TS2348: Value of type 'typeof TeeSpoon' is not callable. Did you mean to include 'new'?
+```
 
 ## Continuous integration (CI)
 
