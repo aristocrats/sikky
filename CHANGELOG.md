@@ -1,3 +1,7 @@
+# v.0.7.0
+
+- added server testing
+
 # v.0.6.2
 
 - improved VSCode support

@@ -1,0 +1,36 @@
+# Fix line endings on Windows
+init:
+  - git config --global core.autocrlf true
+# What combinations to test
+environment:
+  matrix:
+    # node.js
+    - nodejs_version: "stable"
+    - nodejs_version: "5"
+    - nodejs_version: "4"
+platform:
+  - x86
+  - x64
+
+# Install scripts. (runs after repo cloning)
+install:
+  # Get the latest stable version of Node.js or io.js
+  - ps: Install-Product node $env:nodejs_version
+  # install typings
+  - npm install typings -g
+  # install modules
+  - npm install
+
+# Post-install test scripts.
+test_script:
+   # run tests
+  - npm test
+
+# nothing to compile in this project
+build: off
+deploy: off
+
+matrix:
+  fast_finish: true
+cache:
+ - node_modules -> package.json

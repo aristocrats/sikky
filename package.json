@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.6.2",
+  "version": "0.8.0",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -53,8 +53,10 @@
     "lint:tests": "tslint tests/**/*.tsx tests/**/*.ts --ignore-path .gitignore",
     "preinstall": "typings install",
     "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration --skipLibCheck",
-    "pretest": "npm run lint:tests",
-    "test": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
+    "pretest": "rollup -c rollup.mocha.config.js",
+    "test": "npm run test:browser && npm run test:node",
+    "test:browser": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
+    "test:node": "cross-env NODE_ENV=test mocha ./build/test-bundle.js --require buble/register",
     "tdd": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "watch": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration --skipLibCheck --w"
   },
@@ -87,6 +89,7 @@
     "rollup-plugin-typescript": "^0.7.5",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
+    "source-map-support": "^0.4.0",
     "tslint": "next",
     "typescript": "next",
     "typings": "^1.1.0"

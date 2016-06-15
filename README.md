@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 [![CircleCI](https://circleci.com/gh/Kflash/sikky.svg?style=svg)](https://circleci.com/gh/Kflash/sikky)
+[![Build status](https://ci.appveyor.com/api/projects/status/vibxi4wro4qwbdtw?svg=true)](https://ci.appveyor.com/project/Kflash/sikky)
 [![Coverage Status](https://coveralls.io/repos/github/Kflash/sikky/badge.svg?branch=master)](https://coveralls.io/github/Kflash/sikky?branch=master)
 [![npm version](https://badge.fury.io/js/sikky.svg)](https://badge.fury.io/js/sikky)
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
@@ -67,6 +68,9 @@ npm run build:prod
 * `npm run clean` - removed the dist, coverage and build folders
 * `npm run clean:build` - remove the build folder
 * `npm run clean:dist` - removed the dist folder
+* `npm run test` - run all unit tests
+* `npm run test:browser` - run all unit tests in the browser
+* `npm run test:node` - run all unit tests in the `node.js environment`
 * `npm run tdd` - run all unit tests and watch files for changes
 * `npm run watch` - watch your TypeScript files and trigger recompilation on changes.
 
@@ -88,7 +92,7 @@ With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode
 
 ## Continuous integration (CI)
 
-`Travis` and `Circle` are the only supported `CI`. The configuration is similar to Angular and React.
+`Travis`, `Circle` and `Appveyor` are the only supported `CI`. The configuration is similar to Angular, Microsoft and React.
 
 ## Test-driven development (TDD)
 
@@ -100,7 +104,7 @@ It's integrated a `tdd` task for the `Mocha+Chai testing stack` to watch your UT
 
 ## Server testing
 
- Server testing with Mocha will not be integrated because there are too many different ways to do it and I have no idea what configuration you prefer :)
+ A basic server testing solution with Mocha + Rollup is integrated to give a hint on of hit can be done. `npm run test:node`
 
 ## Async/await
 
