@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -89,7 +89,6 @@
     "rollup-plugin-typescript": "^0.7.5",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
-    "source-map-support": "^0.4.0",
     "tslint": "next",
     "typescript": "next",
     "typings": "^1.1.0"

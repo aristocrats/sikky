@@ -1,3 +1,8 @@
+# v.0.8.1
+
+- improved server testing
+- shaved down the dependency tree
+ 
 # v.0.8.0
 
 - added server testing
