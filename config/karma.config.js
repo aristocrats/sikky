@@ -15,7 +15,7 @@ module.exports = (config) => {
 		],
 		preprocessors: {
 			'src/**/*.ts': ['rollup'],
-			'test/browser-tests/**/*.ts': ['rollup', 'sourceMap']
+			'test/browser-tests/**/*.ts': ['rollup', 'sourcemap']
 		},
 		rollupPreprocessor: {
 			rollup: {
