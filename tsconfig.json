@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions":
   {
-    "types": ["mocha", "chai", "sinon"],
+    "types": ["mocha"],
     "allowJs": false,
     "allowUnreachableCode": false,
     "noImplicitAny": true,

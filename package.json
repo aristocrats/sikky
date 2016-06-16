@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "description": "TypeScript 2.0 Pre boilerplate for node and the browser. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.es5.js",
   "jsnext:main": "dist/sikky.js",
@@ -64,7 +64,7 @@
     "tdd:node": "mocha test/node-tests/**/*.ts --require ts-node/register -w --watch-extensions ts",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
     "lint:tests": "tslint test/**/*.tsx test/**/*.ts --ignore-path .gitignore"
- },
+  },
   "devDependencies": {
     "@types/chai": "^3.4.22-alpha",
     "@types/mocha": "^2.2.21-alpha",
