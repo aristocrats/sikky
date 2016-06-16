@@ -19,12 +19,11 @@ A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
+- [x] VSCode integration. Debug and run tests in the editor.
+- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Rollup](http://rollupjs.org/) for bundling
-- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Intelligent code editing with [VSCode](https://code.visualstudio.com/)
-- [x] SourceMap
-- [x] TSX / JSX
 - [x] Experimental support for [ES7](https://tc39.github.io/ecma262/) decorators.
 - [x] async/await and generators support for ES5/ES3
 - [x] [Karma](https://karma-runner.github.io/0.13/index.html) as the test runner
@@ -36,6 +35,8 @@ A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests
 - [x] Production and development build with [Rollup](http://rollupjs.org/).
 - [x] ECMAScript 2015 modules in Node.
 - [x] Allow dead code elimination for ES6 modules
+- [x] SourceMap
+- [x] TSX / JSX
 
 ## Quick start
 
