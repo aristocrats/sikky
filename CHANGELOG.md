@@ -1,3 +1,7 @@
+# v.0.9.8
+
+- moved config files into it's own folder
+
 # v.0.9.7
 
 - improved sourcemap support

@@ -2,20 +2,22 @@ const buble = require('rollup-plugin-buble');
 const istanbul = require('rollup-plugin-istanbul');
 const TSPlugin = require('rollup-plugin-typescript');
 const multiEntry = require('rollup-plugin-multi-entry').default;
-const TSConfig = require('./tsconfig.json');
+const TSConfig = require('../tsconfig.json');
 const TypeScript = require('typescript');
 
 const isCI = process.env.CONTINUOUS_INTEGRATION === 'true';
 
 module.exports = (config) => {
 	config.set({
+    basePath: '..',
 		files: [
-			'./test/browser-tests/**/*.ts'
+			'test/browser-tests/**/*.ts'
+      //'test/node-tests/**/*.ts'
 		],
 		preprocessors: {
-			'./src/**/*.ts': ['rollup'],
-			'./test/browser-tests/**/*.ts': ['rollup']
-      //'./test/node-tests/**/*.ts': ['rollup']
+			'src/**/*.ts': ['rollup'],
+			'test/browser-tests/**/*.ts': ['rollup']
+     // 'test/node-tests/**/*.ts': ['rollup']
 		},
 		rollupPreprocessor: {
 			rollup: {

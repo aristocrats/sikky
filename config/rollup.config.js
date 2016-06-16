@@ -1,15 +1,16 @@
+import * as path from 'path';
 import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
 import strip from 'rollup-plugin-strip';
 import nodeResolve from 'rollup-plugin-node-resolve';
-const pkg = require('./package.json');
+const pkg = require('../package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 export default {
-	entry: 'dist/sikky.js',
+	entry: path.resolve('dist/sikky.js'),
 	useStrict: false,
   banner:
 	'/**\n' +
@@ -36,7 +37,7 @@ export default {
 	],
 	targets: [
 		{
-			dest: `dist/sikky.${PRODUCTION ? 'min.es5.js' : 'es5.js'}`,
+			dest: path.resolve(`dist/sikky.${PRODUCTION ? 'min.es5.js' : 'es5.js'}`),
       format: 'umd',
 	    moduleName: 'sikky',
 	    sourceMap: true
