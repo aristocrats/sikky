@@ -12,11 +12,9 @@
 
 `TypeScript 2.0 Pre` is the default TypeScript compiler, and the source files get transpiled down to `ES2015` by default. `Rollup` and `Bublé` are used to make a clean `ES2015` bundle.`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
 
-Debugging and server testing can be done within  `VSCode` itself. 
+Debugging and server testing can be done within  `VSCode` itself.
 
 A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests. Depends on your computer and the size of your source files.
-
-#### BC! v. 0.9.0 to be pushed soon. Read this readme regarding the upcoming changes! 
 
 ## Features
 

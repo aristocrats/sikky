@@ -1,4 +1,4 @@
-import Sikky from '../src/sikky';
+import Sikky from '../../src/sikky';
 
 const expect = chai.expect;
 

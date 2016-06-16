@@ -1,7 +1,5 @@
 # v. 0.9.0
 
-*Not pushed YET!*
-
 - VSCode integration
 - Code can now be debugged inside VSCode
 - Multiple VSCode tasks added

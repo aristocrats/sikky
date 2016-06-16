@@ -2,22 +2,15 @@ import buble from 'rollup-plugin-buble';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
+import strip from 'rollup-plugin-strip';
 import nodeResolve from 'rollup-plugin-node-resolve';
-const pkg = require('./package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 const DEVELOPMENT = process.env.NODE_ENV === 'development';
 
-const config = {
-	entry: 'build/' +  pkg.name + '.js',
+export default {
+	entry: 'dist/sikky.js',
 	useStrict: false,
-	banner:
-	'/**\n' +
-	' * ' + pkg.name + '\n' +
-	' * @version ' + pkg.version + '\n' +
-	' * @copyright (c) 2016 ' + pkg.author + '\n' +
-	' * @license MIT <'+ pkg.homepage + '/blob/master/LICENSE>\n' +
-	' */',
 	plugins: [
 		PRODUCTION ? uglify({
 			warnings: false,
@@ -29,31 +22,19 @@ const config = {
 			}
 		}) : {},
 		nodeResolve({ jsnext: true, main: true }),
-		replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
 		commonjs({ include: 'node_modules/**' }),
-		buble({ exclude: 'node_modules/**' })
+		strip({ debugger: PRODUCTION ? true : false }),
+		replace({
+			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+		}),
+		buble(),
 	],
 	targets: [
 		{
-			dest: `dist/${pkg.name}.${PRODUCTION ? 'min.js' : 'js'}`,
-			format: 'umd',
-			moduleName: pkg.name,
-			sourceMap: true
-		}
-	]
+			dest: `dist/sikky.${PRODUCTION ? 'min.es5.js' : 'es5.js'}`,
+  format: 'umd',
+	moduleName: 'sikky',
+	sourceMap: true
+    }
+  ]
 };
-
-// Support for Javascript Modules
-// NOTE! This will change soon regarding the specs
-if (DEVELOPMENT) {
-	config.targets.push({
-		dest: 'dist/sikky.mjs',
-		format: 'es6',
-		sourceMap: true
-	})
-}
-
-export default config;
-
-
-

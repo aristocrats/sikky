@@ -4,9 +4,28 @@
     "version": "0.1.0",
     "command": "npm",
     "isShellCommand": true,
-    "args": ["-w", "-p", "."],
     "showOutput": "always",
     "suppressTaskName": true,
-    "isWatching": false,
-    "tasks": []
+    "tasks": [
+        {
+            "taskName": "install",
+            "args": ["install"]
+        },
+        {
+            "taskName": "debug",
+            "args": ["run", "debug"]
+        },
+        {
+            "taskName": "update",
+            "args": ["update"]
+        },
+        {
+            "taskName": "test",
+            "args": ["run", "test:node"]
+        },
+        {
+            "taskName": "clear:all",
+            "args": ["run", "clear:all"]
+        }
+    ]
 }

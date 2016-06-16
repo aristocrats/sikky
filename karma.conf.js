@@ -10,11 +10,12 @@ const isCI = process.env.CONTINUOUS_INTEGRATION === 'true';
 module.exports = (config) => {
 	config.set({
 		files: [
-			'./test/**/*.ts'
+			'./test/browser-tests/**/*.ts'
 		],
 		preprocessors: {
 			'./src/**/*.ts': ['rollup'],
-			'./test/**/*.ts': ['rollup']
+			'./test/browser-tests/**/*.ts': ['rollup']
+      //'./test/node-tests/**/*.ts': ['rollup']
 		},
 		rollupPreprocessor: {
 			rollup: {
@@ -26,7 +27,8 @@ module.exports = (config) => {
 						// the plugin doesn't automatically pick up the installed TS in 'mode_modules'
 						Object.assign(TSConfig.compilerOptions, {
 							typescript: TypeScript, // TS 2.0 Pre
-							module: 'es6'
+							module: 'es6',
+							declaration: false
 						})
 					),
 					buble({
@@ -50,18 +52,17 @@ module.exports = (config) => {
 			reporters: [
 				{ type: 'text' },
 				{ type: 'lcov' },
-				{ type: 'text-summary' },
-				{ type: 'json' },
-				{ type: 'html' }
+				{ type: 'text-summary' }
 			]
 		},
 
 		logLevel: config.LOG_INFO,
 
+		// change Karma's debug.html to the mocha web reporter
 		client: {
-			args: ['--grep', config.grep || ''],
-            // change Karma's debug.html to the mocha web reporter
-            mocha: { reporter: 'html' }
+			mocha: {
+				reporter: 'html'
+			}
 		},
 		colors: true,
 		autoWatch: false,
