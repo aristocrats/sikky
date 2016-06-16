@@ -35,6 +35,7 @@ A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests
 - [x] Allow dead code elimination for ES6 modules
 - [x] SourceMap
 - [x] TSX / JSX
+- [x] Easy debugging
 
 ## Quick start
 
@@ -79,8 +80,13 @@ to watch and recompile your TypeScript code automatically.
 
 Soon as you are done developing, run `npm run build` to get a clean `ES5` bundle done with Rollup.
 
-VSCode is also configured to run server testing within the editor. Open up the VSCode console and type
-`test`. Click then on `Run test task` to run the tests.
+VSCode is also configured to run server testing within the editor. Press `F1` and then type `task` to see all tasks.
+Then click on `Run test task` to run the tests.
+
+There are a few other tasks too...
+
+- `clean` - equalent to the `NPM` script tasks
+- `Build` - transpile the source code down to `ES2015`, so you later on can bundle down to `ES5` with `Rollup`.
 
 ## Bundling
 

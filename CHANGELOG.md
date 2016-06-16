@@ -1,3 +1,12 @@
+# v. 0.9.4
+
+- better integration with VSCode
+
+# v. 0.9.2
+
+- improved server testing with VSCode
+- updated NPM packages
+
 # v. 0.9.0
 
 - VSCode integration

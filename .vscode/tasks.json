@@ -8,24 +8,20 @@
     "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "install",
-            "args": ["install"]
-        },
-        {
             "taskName": "debug",
             "args": ["run", "debug"]
-        },
-        {
-            "taskName": "update",
-            "args": ["update"]
         },
         {
             "taskName": "test",
             "args": ["run", "test:node"]
         },
         {
-            "taskName": "clear:all",
-            "args": ["run", "clear:all"]
+            "taskName": "build",
+            "args": ["run", "prebuild"]
+        },
+        {
+            "taskName": "clean",
+            "args": ["run", "clean"]
         }
     ]
 }
