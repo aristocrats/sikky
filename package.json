@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "TypeScript 2.0 Pre boilerplate for node and the browser. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.es5.js",
   "jsnext:main": "dist/sikky.js",
@@ -56,7 +56,7 @@
     "clean": "rimraf ./coverage/ ./dist/ ./build/",
     "clean:build": "rimraf ./build/",
     "clean:dist": "rimraf dist/",
-    "debug": "npm-run-all clean build:vcode",
+    "debug": "npm-run-all clean:build build:vcode",
     "prebuild": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck",
     "postpublish": "git push origin master --follow-tags",
     "test": "npm run test:browser && npm run test:node",

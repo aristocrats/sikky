@@ -1,3 +1,8 @@
+# v.0.9.6
+
+- fixed issue where the dist files instead of build files got deleted in VSCode
+- updated readme
+
 # v. 0.9.5
 
 - improved server testing
