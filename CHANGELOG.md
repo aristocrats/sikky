@@ -1,3 +1,15 @@
+# v. 0.9.0
+
+*Not pushed YET!*
+
+- VSCode integration
+- Code can now be debugged inside VSCode
+- Multiple VSCode tasks added
+- Better TS 2.0 integration and supprt
+- Loads of new TS 2.0 featurs
+- BC! Server testing have changed, and the server test files are located in `test/node-tests`. Rollup isn't used anymore.
+- readme updated
+
 # v.0.8.8
 
 - added support for the new TS 2.0 [TypeScript definitions](https://github.com/Microsoft/TypeScript/issues/9184)
