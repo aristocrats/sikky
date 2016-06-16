@@ -88,13 +88,6 @@ Press `F5` to start debugging.
 
 To run the Mocha tests on `node.js` - press `F1` and then type `task` to see all tasks available. Click on `test` to run the tests.
 
-## Bundling
-
-Many workflows let you bundle your code with TS errors, providing many hours of frustration. If you try to bundle your source code
-with Sikky, and your code contains errors, you will see something like this in your console:
-
-        `src/sikky.ts(1068,18): error TS2339: Property 'parentElement' does not exist on type`
-
 ## Watch
 
 With the `npm run build:watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
