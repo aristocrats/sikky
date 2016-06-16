@@ -10,9 +10,9 @@
 
 A fast, and small sized TypeScript 2.0 boilerplate. All source files get transpiled down to `ES2015` by default. `Rollup` and `Bublé` are used to make a clean `ES2015` bundle.`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
 
-Debugging and server testing can be done within  `VSCode` itself.
+Debugging and server testing can be done within  `VSCode`.
 
-A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests. Depends on your computer and the size of your source files.
+A complete bundle time is assumed to be around 4 ms, and 5 ms for the browser tests. Depends on your computer and the size of your source files.
 
 ## Features
 
@@ -76,20 +76,17 @@ npm run build:prod
 * `npm run dependencies:check` - shows a list over dependencies with a higher version number then the current one - if any
 * `npm run dependencies:upgrade` - automatically upgrade all devDependencies & dependencies, and update package.json
 
-## VSCode
+## Node development
 
-This boilerplate is configured to work with the `VSCode editor`. Debugging is set up
-to watch and recompile your TypeScript code automatically.
+Start the `VSCode editor`, and press `Ctrl+Shift+B` to build the project. You will see compiler output in the output window (`Ctrl+Shift+U`).
 
-Soon as you are done developing, run `npm run build` to get a clean `ES5` bundle done with Rollup.
+This is the files TSC transpile down to  `ES2015`, and the same files you later on can transpile down to `ES5` with `Rollup + Buble`.
 
-VSCode is also configured to run server testing within the editor. Press `F1` and then type `task` to see all tasks.
-Then click on `test` to run the tests.
+To stop the compilation, press `Ctrl+P → > Tasks: Terminate Running Task`.
 
-There are a few other tasks too...
+Press `F5` to start debugging.
 
-- `clean` - equalent to the `NPM` script tasks
-- `Build` - transpile the source code down to `ES2015`, so you later on can bundle down to `ES5` with `Rollup`.
+To run the Mocha tests on `node.js` - press `F1` and then type `task` to see all tasks available. Click on `test` to run the tests.
 
 ## Bundling
 
