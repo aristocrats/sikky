@@ -81,7 +81,7 @@ to watch and recompile your TypeScript code automatically.
 Soon as you are done developing, run `npm run build` to get a clean `ES5` bundle done with Rollup.
 
 VSCode is also configured to run server testing within the editor. Press `F1` and then type `task` to see all tasks.
-Then click on `Run test task` to run the tests.
+Then click on `test` to run the tests.
 
 There are a few other tasks too...
 
