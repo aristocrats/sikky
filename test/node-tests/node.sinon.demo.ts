@@ -1,5 +1,5 @@
 import SinonDemo from '../../src/sinon_demo';
-import * as chai from 'chai';
+import * as chai from 'chai'; // no direct export
 import * as sinon from 'sinon';
 
 describe('Sinon’s Spy', () => {

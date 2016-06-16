@@ -1,3 +1,9 @@
+# v. 0.9.5
+
+- improved server testing
+- improved bundling
+- general cleanup
+
 # v. 0.9.4
 
 - better integration with VSCode
@@ -20,7 +26,7 @@
 # v.0.8.8
 
 - added support for the new TS 2.0 [TypeScript definitions](https://github.com/Microsoft/TypeScript/issues/9184)
-
+__
 # v.0.8.7
 
 - updated npm packages

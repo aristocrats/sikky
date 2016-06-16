@@ -60,6 +60,7 @@ npm run build:prod
 * `npm run build` - transpile down to ES5 and builds a bundle both for development and production
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
+* `npm run build:vcode` - build task for the VSCode editor
 * `npm run build:watch` - watch your TypeScript files and trigger recompilation on changes.
 * `npm run lint:src` - validates all source files
 * `npm run lint:tests` - validates all test files
@@ -72,6 +73,8 @@ npm run build:prod
 * `npm run tdd:browser` - run all unit tests and watch files for changes in the browser.
 * `npm run tdd:node` - run all unit tests and watch files for changes in the `node.js` environment.
 * `npm run debug` - debug task used by `VSCode`.
+* `npm run dependencies:check` - shows a list over dependencies with a higher version number then the current one - if any
+* `npm run dependencies:upgrade` - automatically upgrade all devDependencies & dependencies, and update package.json
 
 ## VSCode
 
