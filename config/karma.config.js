@@ -11,13 +11,11 @@ module.exports = (config) => {
 	config.set({
     basePath: '..',
 		files: [
-			'test/browser-tests/**/*.ts'
-      //'test/node-tests/**/*.ts'
+      { pattern: 'test/browser-tests/**/*.ts', included: true, watched: true },
 		],
 		preprocessors: {
 			'src/**/*.ts': ['rollup'],
 			'test/browser-tests/**/*.ts': ['rollup']
-     // 'test/node-tests/**/*.ts': ['rollup']
 		},
 		rollupPreprocessor: {
 			rollup: {
