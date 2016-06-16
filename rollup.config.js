@@ -6,7 +6,6 @@ import strip from 'rollup-plugin-strip';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
-const DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 export default {
 	entry: 'dist/sikky.js',
@@ -24,17 +23,15 @@ export default {
 		nodeResolve({ jsnext: true, main: true }),
 		commonjs({ include: 'node_modules/**' }),
 		strip({ debugger: PRODUCTION ? true : false }),
-		replace({
-			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-		}),
+		replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
 		buble(),
 	],
 	targets: [
 		{
 			dest: `dist/sikky.${PRODUCTION ? 'min.es5.js' : 'es5.js'}`,
-  format: 'umd',
-	moduleName: 'sikky',
-	sourceMap: true
+      format: 'umd',
+	    moduleName: 'sikky',
+	    sourceMap: true
     }
   ]
 };
