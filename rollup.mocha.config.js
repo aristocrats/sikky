@@ -1,8 +1,9 @@
 import buble from 'rollup-plugin-buble';
 import TSPlugin from 'rollup-plugin-typescript';
 import multiEntry from 'rollup-plugin-multi-entry';
+import TypeScript from 'typescript';
+import path from 'path';
 const TSConfig = require('./tsconfig.json');
-const TypeScript = require('typescript');
 
 export default {
 	entry: ['test/**/*.ts'],
