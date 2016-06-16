@@ -1,6 +1,6 @@
 # v.0.8.8
 
-- added support for the new TS 2.0 [TypeScript definitions](https://github.com/facebook/react/issues/6910)
+- added support for the new TS 2.0 [TypeScript definitions](https://github.com/Microsoft/TypeScript/issues/9184)
 
 # v.0.8.7
 
