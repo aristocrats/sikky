@@ -1,3 +1,7 @@
+# v.0.8.7
+
+- updated npm packages
+
 # v.0.8.5
 
 - improved Travis
