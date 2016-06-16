@@ -78,9 +78,7 @@ npm run build:prod
 
 ## Node development
 
-Start the `VSCode editor`, and press `Ctrl+Shift+B` to build the project. You will see compiler output in the output window (`Ctrl+Shift+U`).
-
-This is the files TSC transpile down to  `ES2015`, and the same files you later on can transpile down to `ES5` with `Rollup + Buble`.
+Start the `VSCode editor`, and press `Ctrl+Shift+B` to build the project. You will see compiler output in the output window (`Ctrl+Shift+U`) indicating that TypeScript transpile your source code to `ES2015`.
 
 To stop the compilation, press `Ctrl+P → > Tasks: Terminate Running Task`.
 
