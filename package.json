@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.9.6",
+  "version": "0.9.8",
   "description": "TypeScript 2.0 Pre boilerplate for node and the browser. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.es5.js",
   "jsnext:main": "dist/sikky.js",
@@ -20,8 +20,6 @@
   "keywords": [
     "es6",
     "es2015",
-    "async",
-    "await",
     "jsx",
     "tsx",
     "vscode",
@@ -31,8 +29,6 @@
     "tslint",
     "jsnext",
     "ecmascript",
-    "npm",
-    "react",
     "TypeScript",
     "microsoft",
     "tslint",
@@ -57,6 +53,8 @@
     "clean:build": "rimraf ./build/",
     "clean:dist": "rimraf dist/",
     "debug": "npm-run-all clean:build build:vcode",
+    "dependencies:check": "ncu",
+    "dependencies:upgrade": "ncu -u",
     "prebuild": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck",
     "postpublish": "git push origin master --follow-tags",
     "test": "npm run test:browser && npm run test:node",
@@ -65,9 +63,7 @@
     "tdd:browser": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
     "tdd:node": "mocha test/node-tests/**/*.ts --require ts-node/register -w --watch-extensions ts",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
-    "lint:tests": "tslint test/**/*.tsx test/**/*.ts --ignore-path .gitignore",
-    "dependencies:check": "ncu",
-    "dependencies:upgrade": "ncu -u"
+    "lint:tests": "tslint test/**/*.tsx test/**/*.ts --ignore-path .gitignore"
  },
   "devDependencies": {
     "@types/chai": "^3.4.22-alpha",

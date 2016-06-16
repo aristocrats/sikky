@@ -4,12 +4,20 @@ import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
 import strip from 'rollup-plugin-strip';
 import nodeResolve from 'rollup-plugin-node-resolve';
+const pkg = require('./package.json');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 export default {
 	entry: 'dist/sikky.js',
 	useStrict: false,
+  banner:
+	'/**\n' +
+	' * ' + pkg.name + '\n' +
+	' * @version ' + pkg.version + '\n' +
+	' * @copyright (c) 2016 ' + pkg.author + '\n' +
+	' * @license MIT <'+ pkg.homepage + '/blob/master/LICENSE>\n' +
+	' */',
 	plugins: [
 		PRODUCTION ? uglify({
 			warnings: false,

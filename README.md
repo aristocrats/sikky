@@ -12,7 +12,7 @@ A fast, and small sized TypeScript 2.0 boilerplate. All source files get transpi
 
 Debugging and server testing can be done within  `VSCode`.
 
-A complete bundle time is assumed to be around 4 ms, and 5 ms for the browser tests. Depends on your computer and the size of your source files.
+A complete bundle time is assumed to be around 2 ms, and 4 ms for the browser tests. Depends on your computer and the size of your source files.
 
 ## Features
 

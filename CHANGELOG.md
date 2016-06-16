@@ -1,3 +1,11 @@
+# v.0.9.7
+
+- improved sourcemap support
+- improved bundle time. Down to 2 ms
+- improved bundle time. Down to 4 ms for browser tests
+- added banner for development build
+- updated NPM packages
+
 # v.0.9.6
 
 - fixed issue where the dist files instead of build files got deleted in VSCode
