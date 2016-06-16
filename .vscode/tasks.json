@@ -8,19 +8,35 @@
     "suppressTaskName": true,
     "tasks": [
         {
+            //Debug Task
             "taskName": "debug",
+            "isBuildCommand": false,
+             "isTestCommand": false,
+             "showOutput": "always",
             "args": ["run", "debug"]
         },
         {
-            "taskName": "test",
+            // Test Task
+            "taskName": "mocha",
+            "isBuildCommand": false,
+            "isTestCommand": true,
+            "showOutput": "always",
             "args": ["run", "test:node"]
         },
         {
+            // Build Task
             "taskName": "build",
+            "isBuildCommand": true,
+            "isTestCommand": false,
+            "showOutput": "always",
             "args": ["run", "prebuild"]
         },
         {
+            // Clean Task
             "taskName": "clean",
+            "isBuildCommand": false,
+             "isTestCommand": false,
+            "showOutput": "always",
             "args": ["run", "clean"]
         }
     ]
