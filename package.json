@@ -45,8 +45,8 @@
   ],
   "scripts": {
     "build": "npm run lint:src && npm run build:dev && npm run build:prod",
-    "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
-    "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "build:dev": "cross-env NODE_ENV=development rollup -c ./config/rollup.config.js",
+    "build:prod": "cross-env NODE_ENV=production rollup -c ./config/rollup.config.js",
     "build:watch": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck -- watch",
     "build:vcode": "tsc src/sikky.ts --outDir dist -t es5 --m umd --declaration --skipLibCheck --sourceMap",
     "clean": "rimraf ./coverage/ ./dist/ ./build/",
@@ -58,9 +58,9 @@
     "prebuild": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck",
     "postpublish": "git push origin master --follow-tags",
     "test": "npm run test:browser && npm run test:node",
-    "test:browser": "cross-env NODE_ENV=test karma start karma.conf.js --no-auto-watch --single-run",
+    "test:browser": "cross-env NODE_ENV=test karma start ./config/karma.config.js --no-auto-watch --single-run",
     "test:node": "npm run lint:tests && mocha --recursive  test/node-tests/**/*.ts --require ts-node/register -R spec --bail",
-    "tdd:browser": "cross-env NODE_ENV=test karma start karma.conf.js --auto-watch",
+    "tdd:browser": "cross-env NODE_ENV=test karma start ./config/karma.config.js --auto-watch",
     "tdd:node": "mocha test/node-tests/**/*.ts --require ts-node/register -w --watch-extensions ts",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
     "lint:tests": "tslint test/**/*.tsx test/**/*.ts --ignore-path .gitignore"
