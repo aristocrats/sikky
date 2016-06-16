@@ -1,6 +1,6 @@
 {
   "name": "sikky",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
@@ -46,12 +46,11 @@
     "build": "npm run lint:src && npm run build:dev && npm run build:prod",
     "build:dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
     "build:prod": "cross-env NODE_ENV=production rollup -c rollup.config.js",
-    "clean": "rm -rf coverage/ dist/ build/ typings/",
+    "clean": "rm -rf coverage/ dist/ build/",
     "clean:build": "rm -rf build/",
     "clean:dist": "rm -rf dist/",
     "lint:src": "tslint src/**/*.tsx src/**/*.ts --ignore-path .gitignore",
     "lint:tests": "tslint tests/**/*.tsx tests/**/*.ts --ignore-path .gitignore",
-    "preinstall": "typings install",
     "prebuild": "tsc src/sikky.ts --sourcemap --outDir build -t es5 --m es6 --declaration --skipLibCheck",
     "pretest": "rollup -c rollup.mocha.config.js",
     "test": "npm run test:browser && npm run test:node",
@@ -62,7 +61,9 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/mocha": "^2.2.21-alpha",
     "@types/chai": "^3.4.22-alpha",
+    "@types/sinon": "^1.16.20-alpha",
     "@types/sinon-chai": "^2.7.20-alpha",
     "chai": "^3.5.0",
     "cross-env": "^1.0.8",
@@ -92,7 +93,6 @@
     "source-map": "^0.5.6",
     "source-map-support": "^0.4.0",
     "tslint": "^3.11.0",
-    "typescript": "next",
-    "typings": "^1.1.0"
+    "typescript": "next"
   }
 }

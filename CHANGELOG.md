@@ -1,3 +1,7 @@
+# v.0.8.8
+
+- added support for the new TS 2.0 [TypeScript definitions](https://github.com/facebook/react/issues/6910)
+
 # v.0.8.7
 
 - updated npm packages
