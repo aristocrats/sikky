@@ -16,7 +16,7 @@ Debugging and server testing can be done within  `VSCode` itself.
 
 A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests. Depends on your computer and the size of your source files.
 
-### BC! v. 0.9.0 to be pushed soon. Read this readme regarding the upcoming changes! 
+#### BC! v. 0.9.0 to be pushed soon. Read this readme regarding the upcoming changes! 
 
 ## Features
 
