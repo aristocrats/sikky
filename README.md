@@ -1,4 +1,4 @@
-## Sikky
+## TypeScript 2.0 Pre boilerplate for node and the browser
 
 [![Build Status](https://travis-ci.org/Kflash/sikky.svg?branch=master)](https://travis-ci.org/Kflash/sikky)
 [![CircleCI](https://circleci.com/gh/Kflash/sikky.svg?style=svg)](https://circleci.com/gh/Kflash/sikky)
@@ -8,9 +8,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/sikky.svg)](https://www.npmjs.org/package/sikky)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/sikky/blob/master/LICENSE.md)
 
-> A very fast, and small sized TypeScript 2.0 boilerplate.
-
-`TypeScript 2.0 Pre` is the default TypeScript compiler, and the source files get transpiled down to `ES2015` by default. `Rollup` and `Bublé` are used to make a clean `ES2015` bundle.`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
+A fast, and small sized TypeScript 2.0 boilerplate. All source files get transpiled down to `ES2015` by default. `Rollup` and `Bublé` are used to make a clean `ES2015` bundle.`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
 
 Debugging and server testing can be done within  `VSCode` itself.
 

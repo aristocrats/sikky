@@ -1,7 +1,7 @@
 {
   "name": "sikky",
   "version": "0.9.0",
-  "description": "A very fast, and small sized TypeScript 2.0 Pre boilerplate. Tests in Mocha & Chai. TSLint for better code quality",
+  "description": "TypeScript 2.0 Pre boilerplate for node and the browser. Tests in Mocha & Chai. TSLint for better code quality",
   "main": "dist/sikky.js",
   "jsnext:main": "dist/sikky.mjs",
   "author": "KFlash",
@@ -24,6 +24,9 @@
     "await",
     "jsx",
     "tsx",
+    "vscode",
+    "ts-node",
+    "tslint",
     "jsnext",
     "ecmascript",
     "npm",
