@@ -10,14 +10,13 @@
 
 > A very fast, and small sized TypeScript 2.0 boilerplate.
 
-This boilerplate uses `TypeScript 2.0 Pre` to compile down to `ES2015` by default. From there it's up to you if you want to use `Rollup` and `Bublé` to bundle down to a clean `ES2015` bundle.
-`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
+`TypeScript 2.0 Pre` is the default TypeScript compiler, and the source files get transpiled down to `ES2015` by default. `Rollup` and `Bublé` are used to make a clean `ES2015` bundle.`Bublé` is used for compability with older browsers. Easy to get rid of or replaced with `Babel`.
 
-Rollup keep track of the environment variabels, and output both a development and a production build. The production build get minified with `uglify`.
+Debugging and server testing can be done within  `VSCode` itself. 
 
 A complete bundle time is assumed to be around 4 ms, and 6 ms for the unit tests. Depends on your computer and the size of your source files.
 
-The test stack is done with `Karma` + `Mocha` + `TypeScript`. `Rollup + TS 2.0` are used to pre-compile the UT files before they are picked up by Karma. This can simply be replaced with a `Webpack` or a `Browserify` solution.
+### BC! v. 0.9.0 to be pushed soon. Read this readme regarding the upcoming changes! 
 
 ## Features
 
@@ -63,16 +62,27 @@ npm run build:prod
 * `npm run build` - transpile down to ES5 and builds a bundle both for development and production
 * `npm run build:dev` - transpile down to ES5 and builds a bundle for development
 * `npm run build:prod` - transpile down to ES5 and builds a bundle for production
+* `npm run build:watch` - watch your TypeScript files and trigger recompilation on changes.
 * `npm run lint:src` - validates all source files
 * `npm run lint:tests` - validates all test files
 * `npm run clean` - removed the dist, coverage and build folders
 * `npm run clean:build` - remove the build folder
 * `npm run clean:dist` - removed the dist folder
-* `npm run test` - run all unit tests
+* `npm run test` - run tests both for browser and node
 * `npm run test:browser` - run all unit tests in the browser
 * `npm run test:node` - run all unit tests in the `node.js environment`
-* `npm run tdd` - run all unit tests and watch files for changes
-* `npm run watch` - watch your TypeScript files and trigger recompilation on changes.
+* `npm run tdd:browser` - run all unit tests and watch files for changes in the browser.
+* `npm run tdd:node` - run all unit tests and watch files for changes in the `node.js` environment.
+
+## VSCode
+
+This boilerplate is configured to work with the `VSCode editor`. Debugging is set up
+to watch and recompile your TypeScript code automatically.
+
+Soon as you are done developing, run `npm run build` to get a clean `ES5` bundle done with Rollup.
+
+VSCode is also configured to run server testing within the editor. Open up the VSCode console and type
+`test`. Click then on `Run test task` to run the tests.
 
 ## Bundling
 
@@ -83,7 +93,7 @@ with Sikky, and your code contains errors, you will see something like this in y
 
 ## Watch
 
-With the `npm run watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
+With the `npm run build:watch`, the `TypeScript 2.0` compiler will start in watch mode, and watch input files and trigger recompilation on changes. Dead code elimination for ES6 modules are activated by default, so later on you can use either
 `Webpack 2.0` (*early beta stage*) or `Rollup` to perform tree shaking.
 
 The watch task inform you if something is wrong with your code, and can come up with suggestions on how to solve current issue.
@@ -100,7 +110,7 @@ Did you mean to include 'new'?
 
 ## Test-driven development (TDD)
 
-It's integrated a `tdd` task for the `Mocha+Chai testing stack` to watch your UT files.
+It's integrated a `tdd` task both for the browser tests, and server tests.
 
 ## Code coverage
 
@@ -108,9 +118,4 @@ It's integrated a `tdd` task for the `Mocha+Chai testing stack` to watch your UT
 
 ## Server testing
 
- A basic server testing solution with Mocha + Rollup is integrated.
-
-## Async/await
-
-Async/await are only supported for `TS 2.0` with target set to `ES6` or `ES2015`. The TypeScript compiler only support transpilling async / await down to ES2015,
-and then the Microsoft team recommend Babel for ES5 bundling. This is out of the scope for this boilerplate.
+Server testing is done with Mocha + Chai, and is also integrated with the `VSCode`.
