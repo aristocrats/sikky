@@ -70,6 +70,7 @@ npm run build:prod
 * `npm run test:node` - run all unit tests in the `node.js environment`
 * `npm run tdd:browser` - run all unit tests and watch files for changes in the browser.
 * `npm run tdd:node` - run all unit tests and watch files for changes in the `node.js` environment.
+* `npm run debug` - debug task used by `VSCode`.
 
 ## VSCode
 
