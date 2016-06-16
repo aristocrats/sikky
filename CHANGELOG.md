@@ -6,7 +6,7 @@
 - Code can now be debugged inside VSCode
 - Multiple VSCode tasks added
 - Better TS 2.0 integration and supprt
-- Loads of new TS 2.0 featurs
+- Loads of new TS 2.0 features
 - BC! Server testing have changed, and the server test files are located in `test/node-tests`. Rollup isn't used anymore.
 - readme updated
 
