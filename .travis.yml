@@ -12,6 +12,10 @@ node_js:
 matrix:
   fast_finish: true
 
+os:
+  - linux
+  - osx
+
 addons:
 #  firefox: "38.0"
   apt:
@@ -20,6 +24,12 @@ addons:
       - ubuntu-toolchain-r-test
       - google-chrome
     packages:
+      - gcc-4.9
+      - g++-4.9
+      - gcc-4.9-multilib
+      - g++-4.9-multilib
+      - zip
+      - libgtk2.0-0
       - g++
       - google-chrome-stable
 

@@ -101,7 +101,9 @@ Did you mean to include 'new'?
 
 ## Continuous integration (CI)
 
-`Travis`, `Circle` and `Appveyor` are the only supported `CI`. The configuration is similar to Angular, Microsoft and React.
+`Travis`, `Circle` and `Appveyor` are the only supported `CI`. `Travis` is setup to work with Linux and OSX.
+
+`Appveyor` runs only in a `Windows` environment, on both `x86` and `x64` platform.
 
 ## Test-driven development (TDD)
 

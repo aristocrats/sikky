@@ -2,17 +2,14 @@
 
 set -ex -o pipefail
 
-echo 'travis_fold:start:TEST'
+if [ $TRAVIS_OS_NAME == "linux" ]; then
+  # used by xvfb that is used by Chrome
+  export CXX="g++-4.9" CC="gcc-4.9" DISPLAY=:99.0;
+  # Used by karma and karma-chrome-launcher
+  export CHROME_BIN=/usr/bin/google-chrome
+  sh -e /etc/init.d/xvfb start;
+  sleep 3;
+fi
 
-# used by xvfb that is used by Chrome
-export DISPLAY=:99.0
-
-# Used by karma and karma-chrome-launcher
-export CHROME_BIN=/usr/bin/google-chrome
-
-echo 'travis_fold:start:test.run'
-sh -e /etc/init.d/xvfb start
+# This need to be here else Chrome will not run on Linux
 npm test
-echo 'travis_fold:end:test.run'
-
-echo 'travis_fold:end:TEST'
