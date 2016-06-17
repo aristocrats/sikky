@@ -1,3 +1,11 @@
+# v.0.10.0
+
+**Not pushed YET!**
+
+- major refactoring of the CI integration. Travis now runs on both OSX and Linux. AppVeyor runs on both the x86 and x64 platform.
+- improved VSCode configuration
+- ...
+
 # v.0.9.8
 
 - moved config files into it's own folder

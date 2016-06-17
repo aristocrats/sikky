@@ -47,7 +47,7 @@
     "build": "npm run lint:src && npm run build:dev && npm run build:prod",
     "build:dev": "cross-env NODE_ENV=development rollup -c ./config/rollup.config.js",
     "build:prod": "cross-env NODE_ENV=production rollup -c ./config/rollup.config.js",
-    "build:watch": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck -- watch",
+    "build:watch": "tsc src/sikky.ts --outDir dist -t es5 --m es6 --declaration --skipLibCheck --watch",
     "build:vcode": "tsc src/sikky.ts --outDir dist -t es5 --m umd --declaration --skipLibCheck --sourceMap",
     "clean": "rimraf coverage dist build",
     "clean:build": "rimraf build",
