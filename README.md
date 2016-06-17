@@ -115,3 +115,8 @@ It's integrated a `tdd` task both for the browser tests, and server tests.
 ## Server testing
 
 Server testing is done with Mocha + Chai, and is also integrated with the `VSCode`.
+
+## Android and iOS
+
+This boilerplate is tested against Travis CI configured to run `Android` with `SDK version android-19 - 23`.
+It's not tested with `iOS`. But the conlusion is that this works just fine.
